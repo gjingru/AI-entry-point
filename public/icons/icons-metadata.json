@@ -1,0 +1,4311 @@
+{
+  "fileKey": "vPMG6sek8ssvga1ckn8Kat",
+  "totalIcons": 615,
+  "icons": [
+    {
+      "nodeId": "4881:338",
+      "name": "Iphone Outline",
+      "isFrame": false,
+      "filename": "iphone-outline.png",
+      "path": "/icons/iphone-outline.png"
+    },
+    {
+      "nodeId": "4881:339",
+      "name": "Two Factor Devices Outline",
+      "isFrame": false,
+      "filename": "two-factor-devices-outline.png",
+      "path": "/icons/two-factor-devices-outline.png"
+    },
+    {
+      "nodeId": "4881:340",
+      "name": "Direct Reports Outline",
+      "isFrame": false,
+      "filename": "direct-reports-outline.png",
+      "path": "/icons/direct-reports-outline.png"
+    },
+    {
+      "nodeId": "4881:341",
+      "name": "Info Additional",
+      "isFrame": false,
+      "filename": "info-additional.png",
+      "path": "/icons/info-additional.png"
+    },
+    {
+      "nodeId": "4881:342",
+      "name": "Update Address",
+      "isFrame": false,
+      "filename": "update-address.png",
+      "path": "/icons/update-address.png"
+    },
+    {
+      "nodeId": "4881:343",
+      "name": "I 9 Outline",
+      "isFrame": false,
+      "filename": "i-9-outline.png",
+      "path": "/icons/i-9-outline.png"
+    },
+    {
+      "nodeId": "4881:344",
+      "name": "Key",
+      "isFrame": false,
+      "filename": "key.png",
+      "path": "/icons/key.png"
+    },
+    {
+      "nodeId": "4881:346",
+      "name": "Arrow Up Right Box",
+      "isFrame": false,
+      "filename": "arrow-up-right-box.png",
+      "path": "/icons/arrow-up-right-box.png"
+    },
+    {
+      "nodeId": "4881:347",
+      "name": "Hamburger",
+      "isFrame": false,
+      "filename": "hamburger.png",
+      "path": "/icons/hamburger.png"
+    },
+    {
+      "nodeId": "4881:348",
+      "name": "Paystub Dollar",
+      "isFrame": false,
+      "filename": "paystub-dollar.png",
+      "path": "/icons/paystub-dollar.png"
+    },
+    {
+      "nodeId": "4881:349",
+      "name": "Arrow Up Right",
+      "isFrame": false,
+      "filename": "arrow-up-right.png",
+      "path": "/icons/arrow-up-right.png"
+    },
+    {
+      "nodeId": "4881:350",
+      "name": "Excel",
+      "isFrame": false,
+      "filename": "excel.png",
+      "path": "/icons/excel.png"
+    },
+    {
+      "nodeId": "4881:351",
+      "name": "Windows",
+      "isFrame": false,
+      "filename": "windows.png",
+      "path": "/icons/windows.png"
+    },
+    {
+      "nodeId": "4881:352",
+      "name": "Plaid",
+      "isFrame": false,
+      "filename": "plaid.png",
+      "path": "/icons/plaid.png"
+    },
+    {
+      "nodeId": "4881:353",
+      "name": "Arrow Up",
+      "isFrame": false,
+      "filename": "arrow-up.png",
+      "path": "/icons/arrow-up.png"
+    },
+    {
+      "nodeId": "4881:354",
+      "name": "Arrow Down Right",
+      "isFrame": false,
+      "filename": "arrow-down-right.png",
+      "path": "/icons/arrow-down-right.png"
+    },
+    {
+      "nodeId": "4881:355",
+      "name": "Apple",
+      "isFrame": false,
+      "filename": "apple.png",
+      "path": "/icons/apple.png"
+    },
+    {
+      "nodeId": "4881:356",
+      "name": "Arrow Down Left Right",
+      "isFrame": false,
+      "filename": "arrow-down-left-right.png",
+      "path": "/icons/arrow-down-left-right.png"
+    },
+    {
+      "nodeId": "4881:357",
+      "name": "Clear",
+      "isFrame": false,
+      "filename": "clear.png",
+      "path": "/icons/clear.png"
+    },
+    {
+      "nodeId": "4881:358",
+      "name": "Expand",
+      "isFrame": false,
+      "filename": "expand.png",
+      "path": "/icons/expand.png"
+    },
+    {
+      "nodeId": "4881:359",
+      "name": "Play Outline",
+      "isFrame": false,
+      "filename": "play-outline.png",
+      "path": "/icons/play-outline.png"
+    },
+    {
+      "nodeId": "4881:360",
+      "name": "Star Half",
+      "isFrame": false,
+      "filename": "star-half.png",
+      "path": "/icons/star-half.png"
+    },
+    {
+      "nodeId": "4881:361",
+      "name": "Healing Outline",
+      "isFrame": false,
+      "filename": "healing-outline.png",
+      "path": "/icons/healing-outline.png"
+    },
+    {
+      "nodeId": "4881:362",
+      "name": "Wine Club Filled",
+      "isFrame": false,
+      "filename": "wine-club-filled.png",
+      "path": "/icons/wine-club-filled.png"
+    },
+    {
+      "nodeId": "4881:363",
+      "name": "Two Factor Device Filled",
+      "isFrame": false,
+      "filename": "two-factor-device-filled.png",
+      "path": "/icons/two-factor-device-filled.png"
+    },
+    {
+      "nodeId": "4881:364",
+      "name": "Smartphone Filled",
+      "isFrame": false,
+      "filename": "smartphone-filled.png",
+      "path": "/icons/smartphone-filled.png"
+    },
+    {
+      "nodeId": "4881:366",
+      "name": "Play Button Filled",
+      "isFrame": false,
+      "filename": "play-button-filled.png",
+      "path": "/icons/play-button-filled.png"
+    },
+    {
+      "nodeId": "4881:367",
+      "name": "Payroll And Time Dollar Filled",
+      "isFrame": false,
+      "filename": "payroll-and-time-dollar-filled.png",
+      "path": "/icons/payroll-and-time-dollar-filled.png"
+    },
+    {
+      "nodeId": "4881:368",
+      "name": "Drag",
+      "isFrame": false,
+      "filename": "drag.png",
+      "path": "/icons/drag.png"
+    },
+    {
+      "nodeId": "4881:369",
+      "name": "More Vertical",
+      "isFrame": false,
+      "filename": "more-vertical.png",
+      "path": "/icons/more-vertical.png"
+    },
+    {
+      "nodeId": "4881:306",
+      "name": "I9 Filled",
+      "isFrame": false,
+      "filename": "i9-filled.png",
+      "path": "/icons/i9-filled.png"
+    },
+    {
+      "nodeId": "4881:307",
+      "name": "Heal Filled",
+      "isFrame": false,
+      "filename": "heal-filled.png",
+      "path": "/icons/heal-filled.png"
+    },
+    {
+      "nodeId": "4881:308",
+      "name": "Employee Info Filled",
+      "isFrame": false,
+      "filename": "employee-info-filled.png",
+      "path": "/icons/employee-info-filled.png"
+    },
+    {
+      "nodeId": "4881:309",
+      "name": "Dropdown Filled",
+      "isFrame": false,
+      "filename": "dropdown-filled.png",
+      "path": "/icons/dropdown-filled.png"
+    },
+    {
+      "nodeId": "4881:310",
+      "name": "Dropdown Arrow Up Filled",
+      "isFrame": false,
+      "filename": "dropdown-arrow-up-filled.png",
+      "path": "/icons/dropdown-arrow-up-filled.png"
+    },
+    {
+      "nodeId": "4881:311",
+      "name": "Dropdown Arrow Right Filled",
+      "isFrame": false,
+      "filename": "dropdown-arrow-right-filled.png",
+      "path": "/icons/dropdown-arrow-right-filled.png"
+    },
+    {
+      "nodeId": "4881:312",
+      "name": "Dropdown Arrow Left Filled",
+      "isFrame": false,
+      "filename": "dropdown-arrow-left-filled.png",
+      "path": "/icons/dropdown-arrow-left-filled.png"
+    },
+    {
+      "nodeId": "4881:313",
+      "name": "Dropdown Arrow Down Filled",
+      "isFrame": false,
+      "filename": "dropdown-arrow-down-filled.png",
+      "path": "/icons/dropdown-arrow-down-filled.png"
+    },
+    {
+      "nodeId": "4881:314",
+      "name": "Direct Report Filled",
+      "isFrame": false,
+      "filename": "direct-report-filled.png",
+      "path": "/icons/direct-report-filled.png"
+    },
+    {
+      "nodeId": "4881:315",
+      "name": "More Filled",
+      "isFrame": false,
+      "filename": "more-filled.png",
+      "path": "/icons/more-filled.png"
+    },
+    {
+      "nodeId": "4881:316",
+      "name": "Redo",
+      "isFrame": false,
+      "filename": "redo.png",
+      "path": "/icons/redo.png"
+    },
+    {
+      "nodeId": "4881:317",
+      "name": "Undo",
+      "isFrame": false,
+      "filename": "undo.png",
+      "path": "/icons/undo.png"
+    },
+    {
+      "nodeId": "4881:318",
+      "name": "Line Height",
+      "isFrame": false,
+      "filename": "line-height.png",
+      "path": "/icons/line-height.png"
+    },
+    {
+      "nodeId": "4881:319",
+      "name": "E Font Color1",
+      "isFrame": false,
+      "filename": "e-font-color1.png",
+      "path": "/icons/e-font-color1.png"
+    },
+    {
+      "nodeId": "4881:320",
+      "name": "E Strikethrough",
+      "isFrame": false,
+      "filename": "e-strikethrough.png",
+      "path": "/icons/e-strikethrough.png"
+    },
+    {
+      "nodeId": "4881:321",
+      "name": "E Stretch",
+      "isFrame": false,
+      "filename": "e-stretch.png",
+      "path": "/icons/e-stretch.png"
+    },
+    {
+      "nodeId": "4881:322",
+      "name": "E Link",
+      "isFrame": false,
+      "filename": "e-link.png",
+      "path": "/icons/e-link.png"
+    },
+    {
+      "nodeId": "4881:323",
+      "name": "E Code Embed",
+      "isFrame": false,
+      "filename": "e-code-embed.png",
+      "path": "/icons/e-code-embed.png"
+    },
+    {
+      "nodeId": "4881:324",
+      "name": "E Attach",
+      "isFrame": false,
+      "filename": "e-attach.png",
+      "path": "/icons/e-attach.png"
+    },
+    {
+      "nodeId": "4881:325",
+      "name": "E Indent Decrease",
+      "isFrame": false,
+      "filename": "e-indent-decrease.png",
+      "path": "/icons/e-indent-decrease.png"
+    },
+    {
+      "nodeId": "4881:326",
+      "name": "E Indent Increase",
+      "isFrame": false,
+      "filename": "e-indent-increase.png",
+      "path": "/icons/e-indent-increase.png"
+    },
+    {
+      "nodeId": "4881:327",
+      "name": "Numbered List",
+      "isFrame": false,
+      "filename": "numbered-list.png",
+      "path": "/icons/numbered-list.png"
+    },
+    {
+      "nodeId": "4881:328",
+      "name": "E Align Center",
+      "isFrame": false,
+      "filename": "e-align-center.png",
+      "path": "/icons/e-align-center.png"
+    },
+    {
+      "nodeId": "4881:329",
+      "name": "E Align Left",
+      "isFrame": false,
+      "filename": "e-align-left.png",
+      "path": "/icons/e-align-left.png"
+    },
+    {
+      "nodeId": "4881:330",
+      "name": "E Align Right",
+      "isFrame": false,
+      "filename": "e-align-right.png",
+      "path": "/icons/e-align-right.png"
+    },
+    {
+      "nodeId": "4881:331",
+      "name": "E Align Justify",
+      "isFrame": false,
+      "filename": "e-align-justify.png",
+      "path": "/icons/e-align-justify.png"
+    },
+    {
+      "nodeId": "4881:332",
+      "name": "E Font Color",
+      "isFrame": false,
+      "filename": "e-font-color.png",
+      "path": "/icons/e-font-color.png"
+    },
+    {
+      "nodeId": "4881:333",
+      "name": "E Underline",
+      "isFrame": false,
+      "filename": "e-underline.png",
+      "path": "/icons/e-underline.png"
+    },
+    {
+      "nodeId": "4881:334",
+      "name": "E Italic",
+      "isFrame": false,
+      "filename": "e-italic.png",
+      "path": "/icons/e-italic.png"
+    },
+    {
+      "nodeId": "4881:335",
+      "name": "E Bold",
+      "isFrame": false,
+      "filename": "e-bold.png",
+      "path": "/icons/e-bold.png"
+    },
+    {
+      "nodeId": "4881:336",
+      "name": "E Font Size",
+      "isFrame": false,
+      "filename": "e-font-size.png",
+      "path": "/icons/e-font-size.png"
+    },
+    {
+      "nodeId": "4881:337",
+      "name": "Reports Outline",
+      "isFrame": false,
+      "filename": "reports-outline.png",
+      "path": "/icons/reports-outline.png"
+    },
+    {
+      "nodeId": "4881:276",
+      "name": "Platform",
+      "isFrame": false,
+      "filename": "platform.png",
+      "path": "/icons/platform.png"
+    },
+    {
+      "nodeId": "4881:277",
+      "name": "Payroll Time Dollar Outline",
+      "isFrame": false,
+      "filename": "payroll-time-dollar-outline.png",
+      "path": "/icons/payroll-time-dollar-outline.png"
+    },
+    {
+      "nodeId": "4881:278",
+      "name": "Graph Chart",
+      "isFrame": false,
+      "filename": "graph-chart.png",
+      "path": "/icons/graph-chart.png"
+    },
+    {
+      "nodeId": "4881:279",
+      "name": "Line Chart",
+      "isFrame": false,
+      "filename": "line-chart.png",
+      "path": "/icons/line-chart.png"
+    },
+    {
+      "nodeId": "4881:280",
+      "name": "Dollar",
+      "isFrame": false,
+      "filename": "dollar.png",
+      "path": "/icons/dollar.png"
+    },
+    {
+      "nodeId": "4881:281",
+      "name": "Pause",
+      "isFrame": false,
+      "filename": "pause.png",
+      "path": "/icons/pause.png"
+    },
+    {
+      "nodeId": "4859:748",
+      "name": "Refresh Outline",
+      "isFrame": false,
+      "filename": "refresh-outline.png",
+      "path": "/icons/refresh-outline.png"
+    },
+    {
+      "nodeId": "4859:752",
+      "name": "Refresh Filled",
+      "isFrame": false,
+      "filename": "refresh-filled.png",
+      "path": "/icons/refresh-filled.png"
+    },
+    {
+      "nodeId": "4881:282",
+      "name": "Chevron Down",
+      "isFrame": false,
+      "filename": "chevron-down.png",
+      "path": "/icons/chevron-down.png"
+    },
+    {
+      "nodeId": "4881:283",
+      "name": "Chevron Up",
+      "isFrame": false,
+      "filename": "chevron-up.png",
+      "path": "/icons/chevron-up.png"
+    },
+    {
+      "nodeId": "4881:284",
+      "name": "Chevron Left",
+      "isFrame": false,
+      "filename": "chevron-left.png",
+      "path": "/icons/chevron-left.png"
+    },
+    {
+      "nodeId": "4881:285",
+      "name": "Chevron Right",
+      "isFrame": false,
+      "filename": "chevron-right.png",
+      "path": "/icons/chevron-right.png"
+    },
+    {
+      "nodeId": "4881:286",
+      "name": "Filter",
+      "isFrame": false,
+      "filename": "filter.png",
+      "path": "/icons/filter.png"
+    },
+    {
+      "nodeId": "4881:287",
+      "name": "Arrow Right",
+      "isFrame": false,
+      "filename": "arrow-right.png",
+      "path": "/icons/arrow-right.png"
+    },
+    {
+      "nodeId": "4881:288",
+      "name": "Return",
+      "isFrame": false,
+      "filename": "return.png",
+      "path": "/icons/return.png"
+    },
+    {
+      "nodeId": "4881:289",
+      "name": "Download",
+      "isFrame": false,
+      "filename": "download.png",
+      "path": "/icons/download.png"
+    },
+    {
+      "nodeId": "4881:290",
+      "name": "Action Minimize",
+      "isFrame": false,
+      "filename": "action-minimize.png",
+      "path": "/icons/action-minimize.png"
+    },
+    {
+      "nodeId": "4881:291",
+      "name": "Close",
+      "isFrame": false,
+      "filename": "close.png",
+      "path": "/icons/close.png"
+    },
+    {
+      "nodeId": "4881:292",
+      "name": "Add",
+      "isFrame": false,
+      "filename": "add.png",
+      "path": "/icons/add.png"
+    },
+    {
+      "nodeId": "4881:293",
+      "name": "Check",
+      "isFrame": false,
+      "filename": "check.png",
+      "path": "/icons/check.png"
+    },
+    {
+      "nodeId": "4881:294",
+      "name": "Arrow Left",
+      "isFrame": false,
+      "filename": "arrow-left.png",
+      "path": "/icons/arrow-left.png"
+    },
+    {
+      "nodeId": "4881:295",
+      "name": "Upload",
+      "isFrame": false,
+      "filename": "upload.png",
+      "path": "/icons/upload.png"
+    },
+    {
+      "nodeId": "4881:296",
+      "name": "Variable",
+      "isFrame": false,
+      "filename": "variable.png",
+      "path": "/icons/variable.png"
+    },
+    {
+      "nodeId": "4881:297",
+      "name": "Function",
+      "isFrame": false,
+      "filename": "function.png",
+      "path": "/icons/function.png"
+    },
+    {
+      "nodeId": "4881:298",
+      "name": "Arrow Down",
+      "isFrame": false,
+      "filename": "arrow-down.png",
+      "path": "/icons/arrow-down.png"
+    },
+    {
+      "nodeId": "4881:299",
+      "name": "More Horizontal",
+      "isFrame": false,
+      "filename": "more-horizontal.png",
+      "path": "/icons/more-horizontal.png"
+    },
+    {
+      "nodeId": "4881:300",
+      "name": "Zendesk",
+      "isFrame": false,
+      "filename": "zendesk.png",
+      "path": "/icons/zendesk.png"
+    },
+    {
+      "nodeId": "4881:301",
+      "name": "Salesforce",
+      "isFrame": false,
+      "filename": "salesforce.png",
+      "path": "/icons/salesforce.png"
+    },
+    {
+      "nodeId": "4881:302",
+      "name": "Github",
+      "isFrame": false,
+      "filename": "github.png",
+      "path": "/icons/github.png"
+    },
+    {
+      "nodeId": "4881:303",
+      "name": "Zoom",
+      "isFrame": false,
+      "filename": "zoom.png",
+      "path": "/icons/zoom.png"
+    },
+    {
+      "nodeId": "4881:304",
+      "name": "Office 365",
+      "isFrame": false,
+      "filename": "office-365.png",
+      "path": "/icons/office-365.png"
+    },
+    {
+      "nodeId": "4881:305",
+      "name": "Jira",
+      "isFrame": false,
+      "filename": "jira.png",
+      "path": "/icons/jira.png"
+    },
+    {
+      "nodeId": "4881:244",
+      "name": "Gsuite",
+      "isFrame": false,
+      "filename": "gsuite.png",
+      "path": "/icons/gsuite.png"
+    },
+    {
+      "nodeId": "4881:245",
+      "name": "Wine Outline",
+      "isFrame": false,
+      "filename": "wine-outline.png",
+      "path": "/icons/wine-outline.png"
+    },
+    {
+      "nodeId": "4881:246",
+      "name": "Sort",
+      "isFrame": false,
+      "filename": "sort.png",
+      "path": "/icons/sort.png"
+    },
+    {
+      "nodeId": "4881:247",
+      "name": "History",
+      "isFrame": false,
+      "filename": "history.png",
+      "path": "/icons/history.png"
+    },
+    {
+      "nodeId": "4881:248",
+      "name": "Visa Logo",
+      "isFrame": false,
+      "filename": "visa-logo.png",
+      "path": "/icons/visa-logo.png"
+    },
+    {
+      "nodeId": "4881:249",
+      "name": "Tax Logo",
+      "isFrame": false,
+      "filename": "tax-logo.png",
+      "path": "/icons/tax-logo.png"
+    },
+    {
+      "nodeId": "4881:250",
+      "name": "Twitter",
+      "isFrame": false,
+      "filename": "twitter.png",
+      "path": "/icons/twitter.png"
+    },
+    {
+      "nodeId": "4881:251",
+      "name": "Facebook",
+      "isFrame": false,
+      "filename": "facebook.png",
+      "path": "/icons/facebook.png"
+    },
+    {
+      "nodeId": "4881:252",
+      "name": "High Priority",
+      "isFrame": false,
+      "filename": "high-priority.png",
+      "path": "/icons/high-priority.png"
+    },
+    {
+      "nodeId": "4881:253",
+      "name": "Role Mini",
+      "isFrame": false,
+      "filename": "role-mini.png",
+      "path": "/icons/role-mini.png"
+    },
+    {
+      "nodeId": "4881:254",
+      "name": "Text Mini",
+      "isFrame": false,
+      "filename": "text-mini.png",
+      "path": "/icons/text-mini.png"
+    },
+    {
+      "nodeId": "4881:255",
+      "name": "Percent Mini",
+      "isFrame": false,
+      "filename": "percent-mini.png",
+      "path": "/icons/percent-mini.png"
+    },
+    {
+      "nodeId": "4881:256",
+      "name": "Numbers Mini",
+      "isFrame": false,
+      "filename": "numbers-mini.png",
+      "path": "/icons/numbers-mini.png"
+    },
+    {
+      "nodeId": "4881:257",
+      "name": "Dollar Mini",
+      "isFrame": false,
+      "filename": "dollar-mini.png",
+      "path": "/icons/dollar-mini.png"
+    },
+    {
+      "nodeId": "4881:258",
+      "name": "Calendar Mini",
+      "isFrame": false,
+      "filename": "calendar-mini.png",
+      "path": "/icons/calendar-mini.png"
+    },
+    {
+      "nodeId": "4881:259",
+      "name": "Redo Crossed Outline",
+      "isFrame": false,
+      "filename": "redo-crossed-outline.png",
+      "path": "/icons/redo-crossed-outline.png"
+    },
+    {
+      "nodeId": "4881:260",
+      "name": "Strong Yes",
+      "isFrame": false,
+      "filename": "strong-yes.png",
+      "path": "/icons/strong-yes.png"
+    },
+    {
+      "nodeId": "4881:261",
+      "name": "Strong No",
+      "isFrame": false,
+      "filename": "strong-no.png",
+      "path": "/icons/strong-no.png"
+    },
+    {
+      "nodeId": "4881:262",
+      "name": "Short Answer",
+      "isFrame": false,
+      "filename": "short-answer.png",
+      "path": "/icons/short-answer.png"
+    },
+    {
+      "nodeId": "4881:263",
+      "name": "Yubikey",
+      "isFrame": false,
+      "filename": "yubikey.png",
+      "path": "/icons/yubikey.png"
+    },
+    {
+      "nodeId": "4881:264",
+      "name": "Carta",
+      "isFrame": false,
+      "filename": "carta.png",
+      "path": "/icons/carta.png"
+    },
+    {
+      "nodeId": "4881:265",
+      "name": "Variable Selector Mini",
+      "isFrame": false,
+      "filename": "variable-selector-mini.png",
+      "path": "/icons/variable-selector-mini.png"
+    },
+    {
+      "nodeId": "4881:266",
+      "name": "Swap",
+      "isFrame": false,
+      "filename": "swap.png",
+      "path": "/icons/swap.png"
+    },
+    {
+      "nodeId": "4881:267",
+      "name": "Ramp",
+      "isFrame": false,
+      "filename": "ramp.png",
+      "path": "/icons/ramp.png"
+    },
+    {
+      "nodeId": "4881:268",
+      "name": "Pulley",
+      "isFrame": false,
+      "filename": "pulley.png",
+      "path": "/icons/pulley.png"
+    },
+    {
+      "nodeId": "4881:269",
+      "name": "Expensify",
+      "isFrame": false,
+      "filename": "expensify.png",
+      "path": "/icons/expensify.png"
+    },
+    {
+      "nodeId": "4881:270",
+      "name": "Brex",
+      "isFrame": false,
+      "filename": "brex.png",
+      "path": "/icons/brex.png"
+    },
+    {
+      "nodeId": "4881:271",
+      "name": "Refresh Crossed",
+      "isFrame": false,
+      "filename": "refresh-crossed.png",
+      "path": "/icons/refresh-crossed.png"
+    },
+    {
+      "nodeId": "4881:272",
+      "name": "Open Api",
+      "isFrame": false,
+      "filename": "open-api.png",
+      "path": "/icons/open-api.png"
+    },
+    {
+      "nodeId": "4881:273",
+      "name": "Scatter Chart",
+      "isFrame": false,
+      "filename": "scatter-chart.png",
+      "path": "/icons/scatter-chart.png"
+    },
+    {
+      "nodeId": "4881:274",
+      "name": "Metric Chart",
+      "isFrame": false,
+      "filename": "metric-chart.png",
+      "path": "/icons/metric-chart.png"
+    },
+    {
+      "nodeId": "4881:275",
+      "name": "Cut",
+      "isFrame": false,
+      "filename": "cut.png",
+      "path": "/icons/cut.png"
+    },
+    {
+      "nodeId": "4881:212",
+      "name": "Third Party Data",
+      "isFrame": false,
+      "filename": "third-party-data.png",
+      "path": "/icons/third-party-data.png"
+    },
+    {
+      "nodeId": "4881:213",
+      "name": "Collapse",
+      "isFrame": false,
+      "filename": "collapse.png",
+      "path": "/icons/collapse.png"
+    },
+    {
+      "nodeId": "4881:214",
+      "name": "List Mini",
+      "isFrame": false,
+      "filename": "list-mini.png",
+      "path": "/icons/list-mini.png"
+    },
+    {
+      "nodeId": "4881:215",
+      "name": "Lattice",
+      "isFrame": false,
+      "filename": "lattice.png",
+      "path": "/icons/lattice.png"
+    },
+    {
+      "nodeId": "4881:216",
+      "name": "Greenhouse",
+      "isFrame": false,
+      "filename": "greenhouse.png",
+      "path": "/icons/greenhouse.png"
+    },
+    {
+      "nodeId": "4881:217",
+      "name": "Compliance 360",
+      "isFrame": false,
+      "filename": "compliance-360.png",
+      "path": "/icons/compliance-360.png"
+    },
+    {
+      "nodeId": "4881:218",
+      "name": "Wifi",
+      "isFrame": false,
+      "filename": "wifi.png",
+      "path": "/icons/wifi.png"
+    },
+    {
+      "nodeId": "4881:219",
+      "name": "Monitoring",
+      "isFrame": false,
+      "filename": "monitoring.png",
+      "path": "/icons/monitoring.png"
+    },
+    {
+      "nodeId": "4881:220",
+      "name": "Paystub Yen",
+      "isFrame": false,
+      "filename": "paystub-yen.png",
+      "path": "/icons/paystub-yen.png"
+    },
+    {
+      "nodeId": "4881:221",
+      "name": "Paystub Rupee",
+      "isFrame": false,
+      "filename": "paystub-rupee.png",
+      "path": "/icons/paystub-rupee.png"
+    },
+    {
+      "nodeId": "4881:222",
+      "name": "Paystub Pound",
+      "isFrame": false,
+      "filename": "paystub-pound.png",
+      "path": "/icons/paystub-pound.png"
+    },
+    {
+      "nodeId": "4881:223",
+      "name": "Paystub Euro",
+      "isFrame": false,
+      "filename": "paystub-euro.png",
+      "path": "/icons/paystub-euro.png"
+    },
+    {
+      "nodeId": "4881:224",
+      "name": "Yen",
+      "isFrame": false,
+      "filename": "yen.png",
+      "path": "/icons/yen.png"
+    },
+    {
+      "nodeId": "4881:225",
+      "name": "Rupee",
+      "isFrame": false,
+      "filename": "rupee.png",
+      "path": "/icons/rupee.png"
+    },
+    {
+      "nodeId": "4881:226",
+      "name": "Pound",
+      "isFrame": false,
+      "filename": "pound.png",
+      "path": "/icons/pound.png"
+    },
+    {
+      "nodeId": "4881:227",
+      "name": "Euro",
+      "isFrame": false,
+      "filename": "euro.png",
+      "path": "/icons/euro.png"
+    },
+    {
+      "nodeId": "4881:228",
+      "name": "Trip",
+      "isFrame": false,
+      "filename": "trip.png",
+      "path": "/icons/trip.png"
+    },
+    {
+      "nodeId": "4881:229",
+      "name": "Price Cap",
+      "isFrame": false,
+      "filename": "price-cap.png",
+      "path": "/icons/price-cap.png"
+    },
+    {
+      "nodeId": "4881:230",
+      "name": "Co2",
+      "isFrame": false,
+      "filename": "co2.png",
+      "path": "/icons/co2.png"
+    },
+    {
+      "nodeId": "4881:231",
+      "name": "Cabin Class",
+      "isFrame": false,
+      "filename": "cabin-class.png",
+      "path": "/icons/cabin-class.png"
+    },
+    {
+      "nodeId": "4881:232",
+      "name": "Cabin Class Upgrade",
+      "isFrame": false,
+      "filename": "cabin-class-upgrade.png",
+      "path": "/icons/cabin-class-upgrade.png"
+    },
+    {
+      "nodeId": "4881:233",
+      "name": "Power Button",
+      "isFrame": false,
+      "filename": "power-button.png",
+      "path": "/icons/power-button.png"
+    },
+    {
+      "nodeId": "4881:234",
+      "name": "Comfort Filled",
+      "isFrame": false,
+      "filename": "comfort-filled.png",
+      "path": "/icons/comfort-filled.png"
+    },
+    {
+      "nodeId": "4881:235",
+      "name": "Tvos",
+      "isFrame": false,
+      "filename": "tvos.png",
+      "path": "/icons/tvos.png"
+    },
+    {
+      "nodeId": "4881:236",
+      "name": "Macos",
+      "isFrame": false,
+      "filename": "macos.png",
+      "path": "/icons/macos.png"
+    },
+    {
+      "nodeId": "4881:237",
+      "name": "Ios",
+      "isFrame": false,
+      "filename": "ios.png",
+      "path": "/icons/ios.png"
+    },
+    {
+      "nodeId": "4881:238",
+      "name": "Codecov",
+      "isFrame": false,
+      "filename": "codecov.png",
+      "path": "/icons/codecov.png"
+    },
+    {
+      "nodeId": "4881:239",
+      "name": "Slack",
+      "isFrame": false,
+      "filename": "slack.png",
+      "path": "/icons/slack.png"
+    },
+    {
+      "nodeId": "4881:240",
+      "name": "Rearrange",
+      "isFrame": false,
+      "filename": "rearrange.png",
+      "path": "/icons/rearrange.png"
+    },
+    {
+      "nodeId": "4881:241",
+      "name": "Opsgenie",
+      "isFrame": false,
+      "filename": "opsgenie.png",
+      "path": "/icons/opsgenie.png"
+    },
+    {
+      "nodeId": "4881:242",
+      "name": "V2 Auto Filled",
+      "isFrame": false,
+      "filename": "v2-auto-filled.png",
+      "path": "/icons/v2-auto-filled.png"
+    },
+    {
+      "nodeId": "4881:243",
+      "name": "V2 Wifi",
+      "isFrame": false,
+      "filename": "v2-wifi.png",
+      "path": "/icons/v2-wifi.png"
+    },
+    {
+      "nodeId": "4881:370",
+      "name": "Linkedin",
+      "isFrame": false,
+      "filename": "linkedin.png",
+      "path": "/icons/linkedin.png"
+    },
+    {
+      "nodeId": "4556:643",
+      "name": "Laptop",
+      "isFrame": true,
+      "filename": "laptop.png",
+      "path": "/icons/laptop.png"
+    },
+    {
+      "nodeId": "4556:649",
+      "name": "Desktop",
+      "isFrame": true,
+      "filename": "desktop.png",
+      "path": "/icons/desktop.png"
+    },
+    {
+      "nodeId": "4556:662",
+      "name": "Close Circle",
+      "isFrame": true,
+      "filename": "close-circle.png",
+      "path": "/icons/close-circle.png"
+    },
+    {
+      "nodeId": "4556:668",
+      "name": "Lock",
+      "isFrame": true,
+      "filename": "lock.png",
+      "path": "/icons/lock.png"
+    },
+    {
+      "nodeId": "4556:729",
+      "name": "Info Circle",
+      "isFrame": true,
+      "filename": "info-circle.png",
+      "path": "/icons/info-circle.png"
+    },
+    {
+      "nodeId": "4556:747",
+      "name": "Shield",
+      "isFrame": true,
+      "filename": "shield.png",
+      "path": "/icons/shield.png"
+    },
+    {
+      "nodeId": "4556:759",
+      "name": "Zoom In",
+      "isFrame": true,
+      "filename": "zoom-in.png",
+      "path": "/icons/zoom-in.png"
+    },
+    {
+      "nodeId": "4556:765",
+      "name": "Percent",
+      "isFrame": true,
+      "filename": "percent.png",
+      "path": "/icons/percent.png"
+    },
+    {
+      "nodeId": "4556:774",
+      "name": "Document",
+      "isFrame": true,
+      "filename": "document.png",
+      "path": "/icons/document.png"
+    },
+    {
+      "nodeId": "4556:782",
+      "name": "Duplicate",
+      "isFrame": true,
+      "filename": "duplicate.png",
+      "path": "/icons/duplicate.png"
+    },
+    {
+      "nodeId": "4556:789",
+      "name": "Departments",
+      "isFrame": true,
+      "filename": "departments.png",
+      "path": "/icons/departments.png"
+    },
+    {
+      "nodeId": "4556:794",
+      "name": "Apps",
+      "isFrame": true,
+      "filename": "apps.png",
+      "path": "/icons/apps.png"
+    },
+    {
+      "nodeId": "4556:805",
+      "name": "Camera",
+      "isFrame": true,
+      "filename": "camera.png",
+      "path": "/icons/camera.png"
+    },
+    {
+      "nodeId": "4556:813",
+      "name": "Calendar",
+      "isFrame": true,
+      "filename": "calendar.png",
+      "path": "/icons/calendar.png"
+    },
+    {
+      "nodeId": "4556:819",
+      "name": "Shared Folder",
+      "isFrame": true,
+      "filename": "shared-folder.png",
+      "path": "/icons/shared-folder.png"
+    },
+    {
+      "nodeId": "4556:826",
+      "name": "Gif",
+      "isFrame": true,
+      "filename": "gif.png",
+      "path": "/icons/gif.png"
+    },
+    {
+      "nodeId": "4556:835",
+      "name": "Xml",
+      "isFrame": true,
+      "filename": "xml.png",
+      "path": "/icons/xml.png"
+    },
+    {
+      "nodeId": "4556:844",
+      "name": "Vault",
+      "isFrame": true,
+      "filename": "vault.png",
+      "path": "/icons/vault.png"
+    },
+    {
+      "nodeId": "4556:851",
+      "name": "Certificate",
+      "isFrame": true,
+      "filename": "certificate.png",
+      "path": "/icons/certificate.png"
+    },
+    {
+      "nodeId": "4556:861",
+      "name": "Interactive Course",
+      "isFrame": true,
+      "filename": "interactive-course.png",
+      "path": "/icons/interactive-course.png"
+    },
+    {
+      "nodeId": "4556:870",
+      "name": "Help Center",
+      "isFrame": true,
+      "filename": "help-center.png",
+      "path": "/icons/help-center.png"
+    },
+    {
+      "nodeId": "4556:877",
+      "name": "Compass",
+      "isFrame": true,
+      "filename": "compass.png",
+      "path": "/icons/compass.png"
+    },
+    {
+      "nodeId": "4556:884",
+      "name": "Table Column",
+      "isFrame": true,
+      "filename": "table-column.png",
+      "path": "/icons/table-column.png"
+    },
+    {
+      "nodeId": "4556:893",
+      "name": "Star",
+      "isFrame": true,
+      "filename": "star.png",
+      "path": "/icons/star.png"
+    },
+    {
+      "nodeId": "4556:898",
+      "name": "Pdf",
+      "isFrame": true,
+      "filename": "pdf.png",
+      "path": "/icons/pdf.png"
+    },
+    {
+      "nodeId": "4556:909",
+      "name": "Warning Triangle",
+      "isFrame": true,
+      "filename": "warning-triangle.png",
+      "path": "/icons/warning-triangle.png"
+    },
+    {
+      "nodeId": "4556:916",
+      "name": "Zoom Out",
+      "isFrame": true,
+      "filename": "zoom-out.png",
+      "path": "/icons/zoom-out.png"
+    },
+    {
+      "nodeId": "4556:954",
+      "name": "Users",
+      "isFrame": true,
+      "filename": "users.png",
+      "path": "/icons/users.png"
+    },
+    {
+      "nodeId": "4556:962",
+      "name": "User",
+      "isFrame": true,
+      "filename": "user.png",
+      "path": "/icons/user.png"
+    },
+    {
+      "nodeId": "4556:969",
+      "name": "Unlock",
+      "isFrame": true,
+      "filename": "unlock.png",
+      "path": "/icons/unlock.png"
+    },
+    {
+      "nodeId": "4556:974",
+      "name": "Unlimited Pto",
+      "isFrame": true,
+      "filename": "unlimited-pto.png",
+      "path": "/icons/unlimited-pto.png"
+    },
+    {
+      "nodeId": "4556:981",
+      "name": "Trend Report",
+      "isFrame": true,
+      "filename": "trend-report.png",
+      "path": "/icons/trend-report.png"
+    },
+    {
+      "nodeId": "4556:987",
+      "name": "Trash",
+      "isFrame": true,
+      "filename": "trash.png",
+      "path": "/icons/trash.png"
+    },
+    {
+      "nodeId": "4556:994",
+      "name": "Tools",
+      "isFrame": true,
+      "filename": "tools.png",
+      "path": "/icons/tools.png"
+    },
+    {
+      "nodeId": "4556:1000",
+      "name": "Toggle On",
+      "isFrame": true,
+      "filename": "toggle-on.png",
+      "path": "/icons/toggle-on.png"
+    },
+    {
+      "nodeId": "4556:1006",
+      "name": "Toggle Off",
+      "isFrame": true,
+      "filename": "toggle-off.png",
+      "path": "/icons/toggle-off.png"
+    },
+    {
+      "nodeId": "4556:1012",
+      "name": "Time",
+      "isFrame": true,
+      "filename": "time.png",
+      "path": "/icons/time.png"
+    },
+    {
+      "nodeId": "4556:1018",
+      "name": "Thunderbolt",
+      "isFrame": true,
+      "filename": "thunderbolt.png",
+      "path": "/icons/thunderbolt.png"
+    },
+    {
+      "nodeId": "4556:1023",
+      "name": "Task",
+      "isFrame": true,
+      "filename": "task.png",
+      "path": "/icons/task.png"
+    },
+    {
+      "nodeId": "4556:1029",
+      "name": "Star Circle",
+      "isFrame": true,
+      "filename": "star-circle.png",
+      "path": "/icons/star-circle.png"
+    },
+    {
+      "nodeId": "4556:1034",
+      "name": "Stacked Bar Chart",
+      "isFrame": true,
+      "filename": "stacked-bar-chart.png",
+      "path": "/icons/stacked-bar-chart.png"
+    },
+    {
+      "nodeId": "4556:1046",
+      "name": "Signature",
+      "isFrame": true,
+      "filename": "signature.png",
+      "path": "/icons/signature.png"
+    },
+    {
+      "nodeId": "4556:1054",
+      "name": "Shield Disabled",
+      "isFrame": true,
+      "filename": "shield-disabled.png",
+      "path": "/icons/shield-disabled.png"
+    },
+    {
+      "nodeId": "4556:1061",
+      "name": "Share",
+      "isFrame": true,
+      "filename": "share.png",
+      "path": "/icons/share.png"
+    },
+    {
+      "nodeId": "4556:1066",
+      "name": "Settings",
+      "isFrame": true,
+      "filename": "settings.png",
+      "path": "/icons/settings.png"
+    },
+    {
+      "nodeId": "4556:1072",
+      "name": "Search",
+      "isFrame": true,
+      "filename": "search.png",
+      "path": "/icons/search.png"
+    },
+    {
+      "nodeId": "4556:1078",
+      "name": "Save And Exit",
+      "isFrame": true,
+      "filename": "save-and-exit.png",
+      "path": "/icons/save-and-exit.png"
+    },
+    {
+      "nodeId": "4556:1091",
+      "name": "Remove Circle",
+      "isFrame": true,
+      "filename": "remove-circle.png",
+      "path": "/icons/remove-circle.png"
+    },
+    {
+      "nodeId": "4556:1097",
+      "name": "Quote",
+      "isFrame": true,
+      "filename": "quote.png",
+      "path": "/icons/quote.png"
+    },
+    {
+      "nodeId": "4556:1104",
+      "name": "Provision Users Onboard",
+      "isFrame": true,
+      "filename": "provision-users-onboard.png",
+      "path": "/icons/provision-users-onboard.png"
+    },
+    {
+      "nodeId": "4556:1113",
+      "name": "Provision Users Offboard",
+      "isFrame": true,
+      "filename": "provision-users-offboard.png",
+      "path": "/icons/provision-users-offboard.png"
+    },
+    {
+      "nodeId": "4556:1122",
+      "name": "Provision Users",
+      "isFrame": true,
+      "filename": "provision-users.png",
+      "path": "/icons/provision-users.png"
+    },
+    {
+      "nodeId": "4556:1133",
+      "name": "Point In Time",
+      "isFrame": true,
+      "filename": "point-in-time.png",
+      "path": "/icons/point-in-time.png"
+    },
+    {
+      "nodeId": "4556:1139",
+      "name": "Phone",
+      "isFrame": true,
+      "filename": "phone.png",
+      "path": "/icons/phone.png"
+    },
+    {
+      "nodeId": "4556:1144",
+      "name": "Peo",
+      "isFrame": true,
+      "filename": "peo.png",
+      "path": "/icons/peo.png"
+    },
+    {
+      "nodeId": "4556:1155",
+      "name": "Pending",
+      "isFrame": true,
+      "filename": "pending.png",
+      "path": "/icons/pending.png"
+    },
+    {
+      "nodeId": "4556:1160",
+      "name": "Pending Circle",
+      "isFrame": true,
+      "filename": "pending-circle.png",
+      "path": "/icons/pending-circle.png"
+    },
+    {
+      "nodeId": "4556:1168",
+      "name": "Payroll Report Dollar",
+      "isFrame": true,
+      "filename": "payroll-report-dollar.png",
+      "path": "/icons/payroll-report-dollar.png"
+    },
+    {
+      "nodeId": "4556:1176",
+      "name": "Payroll",
+      "isFrame": true,
+      "filename": "payroll.png",
+      "path": "/icons/payroll.png"
+    },
+    {
+      "nodeId": "4556:1181",
+      "name": "Online",
+      "isFrame": true,
+      "filename": "online.png",
+      "path": "/icons/online.png"
+    },
+    {
+      "nodeId": "4556:1186",
+      "name": "Office",
+      "isFrame": true,
+      "filename": "office.png",
+      "path": "/icons/office.png"
+    },
+    {
+      "nodeId": "4556:1199",
+      "name": "Notification",
+      "isFrame": true,
+      "filename": "notification.png",
+      "path": "/icons/notification.png"
+    },
+    {
+      "nodeId": "4556:1205",
+      "name": "My Account Settings",
+      "isFrame": true,
+      "filename": "my-account-settings.png",
+      "path": "/icons/my-account-settings.png"
+    },
+    {
+      "nodeId": "4556:1212",
+      "name": "Multi Select",
+      "isFrame": true,
+      "filename": "multi-select.png",
+      "path": "/icons/multi-select.png"
+    },
+    {
+      "nodeId": "4556:1220",
+      "name": "Message",
+      "isFrame": true,
+      "filename": "message.png",
+      "path": "/icons/message.png"
+    },
+    {
+      "nodeId": "4556:1228",
+      "name": "Meals Snacks Drinks",
+      "isFrame": true,
+      "filename": "meals-snacks-drinks.png",
+      "path": "/icons/meals-snacks-drinks.png"
+    },
+    {
+      "nodeId": "4556:1235",
+      "name": "Location",
+      "isFrame": true,
+      "filename": "location.png",
+      "path": "/icons/location.png"
+    },
+    {
+      "nodeId": "4556:1241",
+      "name": "List",
+      "isFrame": true,
+      "filename": "list.png",
+      "path": "/icons/list.png"
+    },
+    {
+      "nodeId": "4556:1251",
+      "name": "Keyhole",
+      "isFrame": true,
+      "filename": "keyhole.png",
+      "path": "/icons/keyhole.png"
+    },
+    {
+      "nodeId": "4556:1256",
+      "name": "It",
+      "isFrame": true,
+      "filename": "it.png",
+      "path": "/icons/it.png"
+    },
+    {
+      "nodeId": "4556:1264",
+      "name": "Insurance",
+      "isFrame": true,
+      "filename": "insurance.png",
+      "path": "/icons/insurance.png"
+    },
+    {
+      "nodeId": "4556:1270",
+      "name": "Image",
+      "isFrame": true,
+      "filename": "image.png",
+      "path": "/icons/image.png"
+    },
+    {
+      "nodeId": "4556:1276",
+      "name": "Home",
+      "isFrame": true,
+      "filename": "home.png",
+      "path": "/icons/home.png"
+    },
+    {
+      "nodeId": "4556:1281",
+      "name": "Hide",
+      "isFrame": true,
+      "filename": "hide.png",
+      "path": "/icons/hide.png"
+    },
+    {
+      "nodeId": "4556:1289",
+      "name": "Heart",
+      "isFrame": true,
+      "filename": "heart.png",
+      "path": "/icons/heart.png"
+    },
+    {
+      "nodeId": "4556:1294",
+      "name": "Health",
+      "isFrame": true,
+      "filename": "health.png",
+      "path": "/icons/health.png"
+    },
+    {
+      "nodeId": "4556:1299",
+      "name": "Headphones",
+      "isFrame": true,
+      "filename": "headphones.png",
+      "path": "/icons/headphones.png"
+    },
+    {
+      "nodeId": "4556:1304",
+      "name": "Fx",
+      "isFrame": true,
+      "filename": "fx.png",
+      "path": "/icons/fx.png"
+    },
+    {
+      "nodeId": "4556:1313",
+      "name": "Folder",
+      "isFrame": true,
+      "filename": "folder.png",
+      "path": "/icons/folder.png"
+    },
+    {
+      "nodeId": "4556:1318",
+      "name": "Flexible Work Schedule",
+      "isFrame": true,
+      "filename": "flexible-work-schedule.png",
+      "path": "/icons/flexible-work-schedule.png"
+    },
+    {
+      "nodeId": "4556:1325",
+      "name": "File",
+      "isFrame": true,
+      "filename": "file.png",
+      "path": "/icons/file.png"
+    },
+    {
+      "nodeId": "4556:1330",
+      "name": "Feedback Form",
+      "isFrame": true,
+      "filename": "feedback-form.png",
+      "path": "/icons/feedback-form.png"
+    },
+    {
+      "nodeId": "4556:1337",
+      "name": "Feather",
+      "isFrame": true,
+      "filename": "feather.png",
+      "path": "/icons/feather.png"
+    },
+    {
+      "nodeId": "4556:1343",
+      "name": "Eye",
+      "isFrame": true,
+      "filename": "eye.png",
+      "path": "/icons/eye.png"
+    },
+    {
+      "nodeId": "4556:1351",
+      "name": "Warning Circle",
+      "isFrame": true,
+      "filename": "warning-circle.png",
+      "path": "/icons/warning-circle.png"
+    },
+    {
+      "nodeId": "4556:1358",
+      "name": "Email",
+      "isFrame": true,
+      "filename": "email.png",
+      "path": "/icons/email.png"
+    },
+    {
+      "nodeId": "4556:1364",
+      "name": "Edit",
+      "isFrame": true,
+      "filename": "edit.png",
+      "path": "/icons/edit.png"
+    },
+    {
+      "nodeId": "4556:1370",
+      "name": "Doughnut Chart",
+      "isFrame": true,
+      "filename": "doughnut-chart.png",
+      "path": "/icons/doughnut-chart.png"
+    },
+    {
+      "nodeId": "4556:1377",
+      "name": "Dog Friendly",
+      "isFrame": true,
+      "filename": "dog-friendly.png",
+      "path": "/icons/dog-friendly.png"
+    },
+    {
+      "nodeId": "4556:1385",
+      "name": "Delivery Truck",
+      "isFrame": true,
+      "filename": "delivery-truck.png",
+      "path": "/icons/delivery-truck.png"
+    },
+    {
+      "nodeId": "4556:1394",
+      "name": "Custom Fields",
+      "isFrame": true,
+      "filename": "custom-fields.png",
+      "path": "/icons/custom-fields.png"
+    },
+    {
+      "nodeId": "4556:1405",
+      "name": "Csv",
+      "isFrame": true,
+      "filename": "csv.png",
+      "path": "/icons/csv.png"
+    },
+    {
+      "nodeId": "4556:1414",
+      "name": "Credit Card",
+      "isFrame": true,
+      "filename": "credit-card.png",
+      "path": "/icons/credit-card.png"
+    },
+    {
+      "nodeId": "4556:1420",
+      "name": "Create Course",
+      "isFrame": true,
+      "filename": "create-course.png",
+      "path": "/icons/create-course.png"
+    },
+    {
+      "nodeId": "4556:1427",
+      "name": "Courses",
+      "isFrame": true,
+      "filename": "courses.png",
+      "path": "/icons/courses.png"
+    },
+    {
+      "nodeId": "4556:1433",
+      "name": "Compose",
+      "isFrame": true,
+      "filename": "compose.png",
+      "path": "/icons/compose.png"
+    },
+    {
+      "nodeId": "4556:1441",
+      "name": "Compliance Training",
+      "isFrame": true,
+      "filename": "compliance-training.png",
+      "path": "/icons/compliance-training.png"
+    },
+    {
+      "nodeId": "4556:1447",
+      "name": "Competitive Parental Leave",
+      "isFrame": true,
+      "filename": "competitive-parental-leave.png",
+      "path": "/icons/competitive-parental-leave.png"
+    },
+    {
+      "nodeId": "4556:1455",
+      "name": "Company Settings",
+      "isFrame": true,
+      "filename": "company-settings.png",
+      "path": "/icons/company-settings.png"
+    },
+    {
+      "nodeId": "4556:1462",
+      "name": "Column Bar Chart",
+      "isFrame": true,
+      "filename": "column-bar-chart.png",
+      "path": "/icons/column-bar-chart.png"
+    },
+    {
+      "nodeId": "4556:1471",
+      "name": "Clear Formatting",
+      "isFrame": true,
+      "filename": "clear-formatting.png",
+      "path": "/icons/clear-formatting.png"
+    },
+    {
+      "nodeId": "4556:1478",
+      "name": "Check Circle",
+      "isFrame": true,
+      "filename": "check-circle.png",
+      "path": "/icons/check-circle.png"
+    },
+    {
+      "nodeId": "4556:1484",
+      "name": "Change",
+      "isFrame": true,
+      "filename": "change.png",
+      "path": "/icons/change.png"
+    },
+    {
+      "nodeId": "4556:1495",
+      "name": "Cancel",
+      "isFrame": true,
+      "filename": "cancel.png",
+      "path": "/icons/cancel.png"
+    },
+    {
+      "nodeId": "4556:1500",
+      "name": "Handshake",
+      "isFrame": true,
+      "filename": "handshake.png",
+      "path": "/icons/handshake.png"
+    },
+    {
+      "nodeId": "4556:1505",
+      "name": "Briefcase",
+      "isFrame": true,
+      "filename": "briefcase.png",
+      "path": "/icons/briefcase.png"
+    },
+    {
+      "nodeId": "4556:1510",
+      "name": "Bar Chart",
+      "isFrame": true,
+      "filename": "bar-chart.png",
+      "path": "/icons/bar-chart.png"
+    },
+    {
+      "nodeId": "4556:1519",
+      "name": "Archive",
+      "isFrame": true,
+      "filename": "archive.png",
+      "path": "/icons/archive.png"
+    },
+    {
+      "nodeId": "4556:1526",
+      "name": "Add Notification",
+      "isFrame": true,
+      "filename": "add-notification.png",
+      "path": "/icons/add-notification.png"
+    },
+    {
+      "nodeId": "4556:1533",
+      "name": "Add Circle",
+      "isFrame": true,
+      "filename": "add-circle.png",
+      "path": "/icons/add-circle.png"
+    },
+    {
+      "nodeId": "4556:1539",
+      "name": "Accounting",
+      "isFrame": true,
+      "filename": "accounting.png",
+      "path": "/icons/accounting.png"
+    },
+    {
+      "nodeId": "4556:1552",
+      "name": "Accountant",
+      "isFrame": true,
+      "filename": "accountant.png",
+      "path": "/icons/accountant.png"
+    },
+    {
+      "nodeId": "4556:1563",
+      "name": "Chevron Circle Up",
+      "isFrame": true,
+      "filename": "chevron-circle-up.png",
+      "path": "/icons/chevron-circle-up.png"
+    },
+    {
+      "nodeId": "4556:1569",
+      "name": "Chevron Circle Down",
+      "isFrame": true,
+      "filename": "chevron-circle-down.png",
+      "path": "/icons/chevron-circle-down.png"
+    },
+    {
+      "nodeId": "4556:1575",
+      "name": "Dropdown Folder",
+      "isFrame": true,
+      "filename": "dropdown-folder.png",
+      "path": "/icons/dropdown-folder.png"
+    },
+    {
+      "nodeId": "4556:1581",
+      "name": "LMS",
+      "isFrame": true,
+      "filename": "lms.png",
+      "path": "/icons/lms.png"
+    },
+    {
+      "nodeId": "4556:1587",
+      "name": "Help",
+      "isFrame": true,
+      "filename": "help.png",
+      "path": "/icons/help.png"
+    },
+    {
+      "nodeId": "4556:1595",
+      "name": "Tasks",
+      "isFrame": true,
+      "filename": "tasks.png",
+      "path": "/icons/tasks.png"
+    },
+    {
+      "nodeId": "4556:1605",
+      "name": "Question Circle",
+      "isFrame": true,
+      "filename": "question-circle.png",
+      "path": "/icons/question-circle.png"
+    },
+    {
+      "nodeId": "4556:1612",
+      "name": "Travel",
+      "isFrame": true,
+      "filename": "travel.png",
+      "path": "/icons/travel.png"
+    },
+    {
+      "nodeId": "4556:1617",
+      "name": "Receipt",
+      "isFrame": true,
+      "filename": "receipt.png",
+      "path": "/icons/receipt.png"
+    },
+    {
+      "nodeId": "4556:1625",
+      "name": "Fitness",
+      "isFrame": true,
+      "filename": "fitness.png",
+      "path": "/icons/fitness.png"
+    },
+    {
+      "nodeId": "4556:1634",
+      "name": "App Management",
+      "isFrame": true,
+      "filename": "app-management.png",
+      "path": "/icons/app-management.png"
+    },
+    {
+      "nodeId": "4556:1645",
+      "name": "HSA",
+      "isFrame": true,
+      "filename": "hsa.png",
+      "path": "/icons/hsa.png"
+    },
+    {
+      "nodeId": "4556:1655",
+      "name": "FSA",
+      "isFrame": true,
+      "filename": "fsa.png",
+      "path": "/icons/fsa.png"
+    },
+    {
+      "nodeId": "4556:1665",
+      "name": "Survey Very Satisfied",
+      "isFrame": true,
+      "filename": "survey-very-satisfied.png",
+      "path": "/icons/survey-very-satisfied.png"
+    },
+    {
+      "nodeId": "4556:1673",
+      "name": "Survey Very Dissatisfied",
+      "isFrame": true,
+      "filename": "survey-very-dissatisfied.png",
+      "path": "/icons/survey-very-dissatisfied.png"
+    },
+    {
+      "nodeId": "4556:1681",
+      "name": "Survey Satisfied",
+      "isFrame": true,
+      "filename": "survey-satisfied.png",
+      "path": "/icons/survey-satisfied.png"
+    },
+    {
+      "nodeId": "4556:1689",
+      "name": "Survey Neutral",
+      "isFrame": true,
+      "filename": "survey-neutral.png",
+      "path": "/icons/survey-neutral.png"
+    },
+    {
+      "nodeId": "4556:1697",
+      "name": "Survey Dissatisfied",
+      "isFrame": true,
+      "filename": "survey-dissatisfied.png",
+      "path": "/icons/survey-dissatisfied.png"
+    },
+    {
+      "nodeId": "4556:1705",
+      "name": "Data Connector",
+      "isFrame": true,
+      "filename": "data-connector.png",
+      "path": "/icons/data-connector.png"
+    },
+    {
+      "nodeId": "4556:1712",
+      "name": "Nonprofit",
+      "isFrame": true,
+      "filename": "nonprofit.png",
+      "path": "/icons/nonprofit.png"
+    },
+    {
+      "nodeId": "4556:1719",
+      "name": "Technology",
+      "isFrame": true,
+      "filename": "technology.png",
+      "path": "/icons/technology.png"
+    },
+    {
+      "nodeId": "4556:1726",
+      "name": "Sales",
+      "isFrame": true,
+      "filename": "sales.png",
+      "path": "/icons/sales.png"
+    },
+    {
+      "nodeId": "4556:1735",
+      "name": "Roi",
+      "isFrame": true,
+      "filename": "roi.png",
+      "path": "/icons/roi.png"
+    },
+    {
+      "nodeId": "4556:1746",
+      "name": "Rideshare",
+      "isFrame": true,
+      "filename": "rideshare.png",
+      "path": "/icons/rideshare.png"
+    },
+    {
+      "nodeId": "4556:1757",
+      "name": "Retail Dollar",
+      "isFrame": true,
+      "filename": "retail-dollar.png",
+      "path": "/icons/retail-dollar.png"
+    },
+    {
+      "nodeId": "4556:1764",
+      "name": "Recipes",
+      "isFrame": true,
+      "filename": "recipes.png",
+      "path": "/icons/recipes.png"
+    },
+    {
+      "nodeId": "4556:1770",
+      "name": "Office Supplies",
+      "isFrame": true,
+      "filename": "office-supplies.png",
+      "path": "/icons/office-supplies.png"
+    },
+    {
+      "nodeId": "4556:1776",
+      "name": "Dollar Circle",
+      "isFrame": true,
+      "filename": "dollar-circle.png",
+      "path": "/icons/dollar-circle.png"
+    },
+    {
+      "nodeId": "4556:1782",
+      "name": "Medical",
+      "isFrame": true,
+      "filename": "medical.png",
+      "path": "/icons/medical.png"
+    },
+    {
+      "nodeId": "4556:1788",
+      "name": "Meals",
+      "isFrame": true,
+      "filename": "meals.png",
+      "path": "/icons/meals.png"
+    },
+    {
+      "nodeId": "4556:1793",
+      "name": "Marketing And Advertising",
+      "isFrame": true,
+      "filename": "marketing-and-advertising.png",
+      "path": "/icons/marketing-and-advertising.png"
+    },
+    {
+      "nodeId": "4556:1805",
+      "name": "Legal",
+      "isFrame": true,
+      "filename": "legal.png",
+      "path": "/icons/legal.png"
+    },
+    {
+      "nodeId": "4556:1814",
+      "name": "HR",
+      "isFrame": true,
+      "filename": "hr.png",
+      "path": "/icons/hr.png"
+    },
+    {
+      "nodeId": "4556:1827",
+      "name": "Groceries",
+      "isFrame": true,
+      "filename": "groceries.png",
+      "path": "/icons/groceries.png"
+    },
+    {
+      "nodeId": "4556:1836",
+      "name": "Finances",
+      "isFrame": true,
+      "filename": "finances.png",
+      "path": "/icons/finances.png"
+    },
+    {
+      "nodeId": "4556:1843",
+      "name": "Events And Webinars",
+      "isFrame": true,
+      "filename": "events-and-webinars.png",
+      "path": "/icons/events-and-webinars.png"
+    },
+    {
+      "nodeId": "4556:1849",
+      "name": "Entertainment",
+      "isFrame": true,
+      "filename": "entertainment.png",
+      "path": "/icons/entertainment.png"
+    },
+    {
+      "nodeId": "4556:1857",
+      "name": "Engineering",
+      "isFrame": true,
+      "filename": "engineering.png",
+      "path": "/icons/engineering.png"
+    },
+    {
+      "nodeId": "4556:1864",
+      "name": "Device Inventory Management",
+      "isFrame": true,
+      "filename": "device-inventory-management.png",
+      "path": "/icons/device-inventory-management.png"
+    },
+    {
+      "nodeId": "4556:1873",
+      "name": "Bookmark",
+      "isFrame": true,
+      "filename": "bookmark.png",
+      "path": "/icons/bookmark.png"
+    },
+    {
+      "nodeId": "4556:1878",
+      "name": "Device Inventory",
+      "isFrame": true,
+      "filename": "device-inventory.png",
+      "path": "/icons/device-inventory.png"
+    },
+    {
+      "nodeId": "4556:1886",
+      "name": "Customer Testimonials",
+      "isFrame": true,
+      "filename": "customer-testimonials.png",
+      "path": "/icons/customer-testimonials.png"
+    },
+    {
+      "nodeId": "4556:1892",
+      "name": "Customer Maturity",
+      "isFrame": true,
+      "filename": "customer-maturity.png",
+      "path": "/icons/customer-maturity.png"
+    },
+    {
+      "nodeId": "4556:1898",
+      "name": "Content Library",
+      "isFrame": true,
+      "filename": "content-library.png",
+      "path": "/icons/content-library.png"
+    },
+    {
+      "nodeId": "4556:1906",
+      "name": "Consultant",
+      "isFrame": true,
+      "filename": "consultant.png",
+      "path": "/icons/consultant.png"
+    },
+    {
+      "nodeId": "4556:1919",
+      "name": "Charity",
+      "isFrame": true,
+      "filename": "charity.png",
+      "path": "/icons/charity.png"
+    },
+    {
+      "nodeId": "4556:1927",
+      "name": "Books",
+      "isFrame": true,
+      "filename": "books.png",
+      "path": "/icons/books.png"
+    },
+    {
+      "nodeId": "4556:1932",
+      "name": "Blogs",
+      "isFrame": true,
+      "filename": "blogs.png",
+      "path": "/icons/blogs.png"
+    },
+    {
+      "nodeId": "4556:1939",
+      "name": "Auto",
+      "isFrame": true,
+      "filename": "auto.png",
+      "path": "/icons/auto.png"
+    },
+    {
+      "nodeId": "4556:1947",
+      "name": "Thumbtack",
+      "isFrame": true,
+      "filename": "thumbtack.png",
+      "path": "/icons/thumbtack.png"
+    },
+    {
+      "nodeId": "4556:1952",
+      "name": "Stacked V Chart",
+      "isFrame": true,
+      "filename": "stacked-v-chart.png",
+      "path": "/icons/stacked-v-chart.png"
+    },
+    {
+      "nodeId": "4556:1959",
+      "name": "Paste",
+      "isFrame": true,
+      "filename": "paste.png",
+      "path": "/icons/paste.png"
+    },
+    {
+      "nodeId": "4556:1964",
+      "name": "Globe",
+      "isFrame": true,
+      "filename": "globe.png",
+      "path": "/icons/globe.png"
+    },
+    {
+      "nodeId": "4556:1974",
+      "name": "Gauge Chart",
+      "isFrame": true,
+      "filename": "gauge-chart.png",
+      "path": "/icons/gauge-chart.png"
+    },
+    {
+      "nodeId": "4556:1981",
+      "name": "Funnel Chart",
+      "isFrame": true,
+      "filename": "funnel-chart.png",
+      "path": "/icons/funnel-chart.png"
+    },
+    {
+      "nodeId": "4556:1988",
+      "name": "Combo Chart",
+      "isFrame": true,
+      "filename": "combo-chart.png",
+      "path": "/icons/combo-chart.png"
+    },
+    {
+      "nodeId": "4556:1999",
+      "name": "Skip Logic",
+      "isFrame": true,
+      "filename": "skip-logic.png",
+      "path": "/icons/skip-logic.png"
+    },
+    {
+      "nodeId": "4556:2010",
+      "name": "Unique Id",
+      "isFrame": true,
+      "filename": "unique-id.png",
+      "path": "/icons/unique-id.png"
+    },
+    {
+      "nodeId": "4556:2020",
+      "name": "Meeting Rooms",
+      "isFrame": true,
+      "filename": "meeting-rooms.png",
+      "path": "/icons/meeting-rooms.png"
+    },
+    {
+      "nodeId": "4556:2026",
+      "name": "Photo Gallery",
+      "isFrame": true,
+      "filename": "photo-gallery.png",
+      "path": "/icons/photo-gallery.png"
+    },
+    {
+      "nodeId": "4556:2033",
+      "name": "Leave Management",
+      "isFrame": true,
+      "filename": "leave-management.png",
+      "path": "/icons/leave-management.png"
+    },
+    {
+      "nodeId": "4556:2044",
+      "name": "Vpn",
+      "isFrame": true,
+      "filename": "vpn.png",
+      "path": "/icons/vpn.png"
+    },
+    {
+      "nodeId": "4556:2054",
+      "name": "Unified System",
+      "isFrame": true,
+      "filename": "unified-system.png",
+      "path": "/icons/unified-system.png"
+    },
+    {
+      "nodeId": "4556:2061",
+      "name": "Taxes",
+      "isFrame": true,
+      "filename": "taxes.png",
+      "path": "/icons/taxes.png"
+    },
+    {
+      "nodeId": "4556:2069",
+      "name": "Pay Schedule Dollar",
+      "isFrame": true,
+      "filename": "pay-schedule-dollar.png",
+      "path": "/icons/pay-schedule-dollar.png"
+    },
+    {
+      "nodeId": "4556:2076",
+      "name": "Overtime Policy",
+      "isFrame": true,
+      "filename": "overtime-policy.png",
+      "path": "/icons/overtime-policy.png"
+    },
+    {
+      "nodeId": "4556:2085",
+      "name": "General Ledger Dollar",
+      "isFrame": true,
+      "filename": "general-ledger-dollar.png",
+      "path": "/icons/general-ledger-dollar.png"
+    },
+    {
+      "nodeId": "4556:2091",
+      "name": "Expense Policy Dollar",
+      "isFrame": true,
+      "filename": "expense-policy-dollar.png",
+      "path": "/icons/expense-policy-dollar.png"
+    },
+    {
+      "nodeId": "4556:2097",
+      "name": "Equity Dollar",
+      "isFrame": true,
+      "filename": "equity-dollar.png",
+      "path": "/icons/equity-dollar.png"
+    },
+    {
+      "nodeId": "4556:2104",
+      "name": "Customize Policy",
+      "isFrame": true,
+      "filename": "customize-policy.png",
+      "path": "/icons/customize-policy.png"
+    },
+    {
+      "nodeId": "4556:2111",
+      "name": "Customer Spotlight",
+      "isFrame": true,
+      "filename": "customer-spotlight.png",
+      "path": "/icons/customer-spotlight.png"
+    },
+    {
+      "nodeId": "4556:2120",
+      "name": "Credit Card Spending Limit",
+      "isFrame": true,
+      "filename": "credit-card-spending-limit.png",
+      "path": "/icons/credit-card-spending-limit.png"
+    },
+    {
+      "nodeId": "4556:2128",
+      "name": "Accessibility",
+      "isFrame": true,
+      "filename": "accessibility.png",
+      "path": "/icons/accessibility.png"
+    },
+    {
+      "nodeId": "4556:2135",
+      "name": "Public Transportation",
+      "isFrame": true,
+      "filename": "public-transportation.png",
+      "path": "/icons/public-transportation.png"
+    },
+    {
+      "nodeId": "4556:2143",
+      "name": "Automated Compliance",
+      "isFrame": true,
+      "filename": "automated-compliance.png",
+      "path": "/icons/automated-compliance.png"
+    },
+    {
+      "nodeId": "4556:2151",
+      "name": "Yen Circle",
+      "isFrame": true,
+      "filename": "yen-circle.png",
+      "path": "/icons/yen-circle.png"
+    },
+    {
+      "nodeId": "4556:2157",
+      "name": "Rupee Circle",
+      "isFrame": true,
+      "filename": "rupee-circle.png",
+      "path": "/icons/rupee-circle.png"
+    },
+    {
+      "nodeId": "4556:2163",
+      "name": "Retail Yen",
+      "isFrame": true,
+      "filename": "retail-yen.png",
+      "path": "/icons/retail-yen.png"
+    },
+    {
+      "nodeId": "4556:2170",
+      "name": "Retail Rupee",
+      "isFrame": true,
+      "filename": "retail-rupee.png",
+      "path": "/icons/retail-rupee.png"
+    },
+    {
+      "nodeId": "4556:2177",
+      "name": "Retail Pound",
+      "isFrame": true,
+      "filename": "retail-pound.png",
+      "path": "/icons/retail-pound.png"
+    },
+    {
+      "nodeId": "4556:2184",
+      "name": "Retail Euro",
+      "isFrame": true,
+      "filename": "retail-euro.png",
+      "path": "/icons/retail-euro.png"
+    },
+    {
+      "nodeId": "4556:2189",
+      "name": "Pound Circle",
+      "isFrame": true,
+      "filename": "pound-circle.png",
+      "path": "/icons/pound-circle.png"
+    },
+    {
+      "nodeId": "4556:2195",
+      "name": "Payroll Report Yen",
+      "isFrame": true,
+      "filename": "payroll-report-yen.png",
+      "path": "/icons/payroll-report-yen.png"
+    },
+    {
+      "nodeId": "4556:2203",
+      "name": "Payroll Report Rupee",
+      "isFrame": true,
+      "filename": "payroll-report-rupee.png",
+      "path": "/icons/payroll-report-rupee.png"
+    },
+    {
+      "nodeId": "4556:2211",
+      "name": "Payroll Report Pound",
+      "isFrame": true,
+      "filename": "payroll-report-pound.png",
+      "path": "/icons/payroll-report-pound.png"
+    },
+    {
+      "nodeId": "4556:2218",
+      "name": "Payroll Report Euro",
+      "isFrame": true,
+      "filename": "payroll-report-euro.png",
+      "path": "/icons/payroll-report-euro.png"
+    },
+    {
+      "nodeId": "4556:2226",
+      "name": "Payroll Time Yen",
+      "isFrame": true,
+      "filename": "payroll-time-yen.png",
+      "path": "/icons/payroll-time-yen.png"
+    },
+    {
+      "nodeId": "4556:2234",
+      "name": "Payroll Time Rupee",
+      "isFrame": true,
+      "filename": "payroll-time-rupee.png",
+      "path": "/icons/payroll-time-rupee.png"
+    },
+    {
+      "nodeId": "4556:2242",
+      "name": "Payroll Time Pound",
+      "isFrame": true,
+      "filename": "payroll-time-pound.png",
+      "path": "/icons/payroll-time-pound.png"
+    },
+    {
+      "nodeId": "4556:2250",
+      "name": "Payroll Time Euro",
+      "isFrame": true,
+      "filename": "payroll-time-euro.png",
+      "path": "/icons/payroll-time-euro.png"
+    },
+    {
+      "nodeId": "4556:2257",
+      "name": "Pay Schedule Yen",
+      "isFrame": true,
+      "filename": "pay-schedule-yen.png",
+      "path": "/icons/pay-schedule-yen.png"
+    },
+    {
+      "nodeId": "4556:2264",
+      "name": "Pay Schedule Rupee",
+      "isFrame": true,
+      "filename": "pay-schedule-rupee.png",
+      "path": "/icons/pay-schedule-rupee.png"
+    },
+    {
+      "nodeId": "4556:2271",
+      "name": "Pay Schedule Pound",
+      "isFrame": true,
+      "filename": "pay-schedule-pound.png",
+      "path": "/icons/pay-schedule-pound.png"
+    },
+    {
+      "nodeId": "4556:2278",
+      "name": "Pay Schedule Euro",
+      "isFrame": true,
+      "filename": "pay-schedule-euro.png",
+      "path": "/icons/pay-schedule-euro.png"
+    },
+    {
+      "nodeId": "4556:2285",
+      "name": "General Ledger Yen",
+      "isFrame": true,
+      "filename": "general-ledger-yen.png",
+      "path": "/icons/general-ledger-yen.png"
+    },
+    {
+      "nodeId": "4556:2291",
+      "name": "General Ledger Rupee",
+      "isFrame": true,
+      "filename": "general-ledger-rupee.png",
+      "path": "/icons/general-ledger-rupee.png"
+    },
+    {
+      "nodeId": "4556:2297",
+      "name": "General Ledger Pound",
+      "isFrame": true,
+      "filename": "general-ledger-pound.png",
+      "path": "/icons/general-ledger-pound.png"
+    },
+    {
+      "nodeId": "4556:2303",
+      "name": "General Ledger Euro",
+      "isFrame": true,
+      "filename": "general-ledger-euro.png",
+      "path": "/icons/general-ledger-euro.png"
+    },
+    {
+      "nodeId": "4556:2309",
+      "name": "Expense Policy Yen",
+      "isFrame": true,
+      "filename": "expense-policy-yen.png",
+      "path": "/icons/expense-policy-yen.png"
+    },
+    {
+      "nodeId": "4556:2315",
+      "name": "Expense Policy Rupee",
+      "isFrame": true,
+      "filename": "expense-policy-rupee.png",
+      "path": "/icons/expense-policy-rupee.png"
+    },
+    {
+      "nodeId": "4556:2321",
+      "name": "Expense Policy Pound",
+      "isFrame": true,
+      "filename": "expense-policy-pound.png",
+      "path": "/icons/expense-policy-pound.png"
+    },
+    {
+      "nodeId": "4556:2327",
+      "name": "Expense Policy Euro",
+      "isFrame": true,
+      "filename": "expense-policy-euro.png",
+      "path": "/icons/expense-policy-euro.png"
+    },
+    {
+      "nodeId": "4556:2333",
+      "name": "Euro Circle",
+      "isFrame": true,
+      "filename": "euro-circle.png",
+      "path": "/icons/euro-circle.png"
+    },
+    {
+      "nodeId": "4556:2339",
+      "name": "Equity Yen",
+      "isFrame": true,
+      "filename": "equity-yen.png",
+      "path": "/icons/equity-yen.png"
+    },
+    {
+      "nodeId": "4556:2345",
+      "name": "Equity Rupee",
+      "isFrame": true,
+      "filename": "equity-rupee.png",
+      "path": "/icons/equity-rupee.png"
+    },
+    {
+      "nodeId": "4556:2352",
+      "name": "Equity Pound",
+      "isFrame": true,
+      "filename": "equity-pound.png",
+      "path": "/icons/equity-pound.png"
+    },
+    {
+      "nodeId": "4556:2358",
+      "name": "Equity Euro",
+      "isFrame": true,
+      "filename": "equity-euro.png",
+      "path": "/icons/equity-euro.png"
+    },
+    {
+      "nodeId": "4556:2365",
+      "name": "Change Fsa Yen",
+      "isFrame": true,
+      "filename": "change-fsa-yen.png",
+      "path": "/icons/change-fsa-yen.png"
+    },
+    {
+      "nodeId": "4556:2371",
+      "name": "Change Fsa Rupee",
+      "isFrame": true,
+      "filename": "change-fsa-rupee.png",
+      "path": "/icons/change-fsa-rupee.png"
+    },
+    {
+      "nodeId": "4556:2377",
+      "name": "Change Fsa Pound",
+      "isFrame": true,
+      "filename": "change-fsa-pound.png",
+      "path": "/icons/change-fsa-pound.png"
+    },
+    {
+      "nodeId": "4556:2383",
+      "name": "Change Fsa Euro",
+      "isFrame": true,
+      "filename": "change-fsa-euro.png",
+      "path": "/icons/change-fsa-euro.png"
+    },
+    {
+      "nodeId": "4556:2389",
+      "name": "Power",
+      "isFrame": true,
+      "filename": "power.png",
+      "path": "/icons/power.png"
+    },
+    {
+      "nodeId": "4556:2394",
+      "name": "Paid Seat Selection",
+      "isFrame": true,
+      "filename": "paid-seat-selection.png",
+      "path": "/icons/paid-seat-selection.png"
+    },
+    {
+      "nodeId": "4556:2401",
+      "name": "Overnight",
+      "isFrame": true,
+      "filename": "overnight.png",
+      "path": "/icons/overnight.png"
+    },
+    {
+      "nodeId": "4556:2406",
+      "name": "Origin",
+      "isFrame": true,
+      "filename": "origin.png",
+      "path": "/icons/origin.png"
+    },
+    {
+      "nodeId": "4556:2412",
+      "name": "Multi Stop",
+      "isFrame": true,
+      "filename": "multi-stop.png",
+      "path": "/icons/multi-stop.png"
+    },
+    {
+      "nodeId": "4556:2421",
+      "name": "Legroom",
+      "isFrame": true,
+      "filename": "legroom.png",
+      "path": "/icons/legroom.png"
+    },
+    {
+      "nodeId": "4556:2428",
+      "name": "Hotel",
+      "isFrame": true,
+      "filename": "hotel.png",
+      "path": "/icons/hotel.png"
+    },
+    {
+      "nodeId": "4556:2433",
+      "name": "Departure",
+      "isFrame": true,
+      "filename": "departure.png",
+      "path": "/icons/departure.png"
+    },
+    {
+      "nodeId": "4556:2440",
+      "name": "Bags",
+      "isFrame": true,
+      "filename": "bags.png",
+      "path": "/icons/bags.png"
+    },
+    {
+      "nodeId": "4556:2448",
+      "name": "Airlines",
+      "isFrame": true,
+      "filename": "airlines.png",
+      "path": "/icons/airlines.png"
+    },
+    {
+      "nodeId": "4556:2454",
+      "name": "Airline Stops",
+      "isFrame": true,
+      "filename": "airline-stops.png",
+      "path": "/icons/airline-stops.png"
+    },
+    {
+      "nodeId": "4556:2459",
+      "name": "Recline Normal",
+      "isFrame": true,
+      "filename": "recline-normal.png",
+      "path": "/icons/recline-normal.png"
+    },
+    {
+      "nodeId": "4556:2466",
+      "name": "Recline Extra",
+      "isFrame": true,
+      "filename": "recline-extra.png",
+      "path": "/icons/recline-extra.png"
+    },
+    {
+      "nodeId": "4556:2473",
+      "name": "Bank",
+      "isFrame": true,
+      "filename": "bank.png",
+      "path": "/icons/bank.png"
+    },
+    {
+      "nodeId": "4556:2478",
+      "name": "Zip",
+      "isFrame": true,
+      "filename": "zip.png",
+      "path": "/icons/zip.png"
+    },
+    {
+      "nodeId": "4556:2488",
+      "name": "Un Archive",
+      "isFrame": true,
+      "filename": "un-archive.png",
+      "path": "/icons/un-archive.png"
+    },
+    {
+      "nodeId": "4556:2495",
+      "name": "Invoice Dollar",
+      "isFrame": true,
+      "filename": "invoice-dollar.png",
+      "path": "/icons/invoice-dollar.png"
+    },
+    {
+      "nodeId": "4556:2501",
+      "name": "Invoice Yen",
+      "isFrame": true,
+      "filename": "invoice-yen.png",
+      "path": "/icons/invoice-yen.png"
+    },
+    {
+      "nodeId": "4556:2507",
+      "name": "Invoice Rupee",
+      "isFrame": true,
+      "filename": "invoice-rupee.png",
+      "path": "/icons/invoice-rupee.png"
+    },
+    {
+      "nodeId": "4556:2513",
+      "name": "Invoice Pound",
+      "isFrame": true,
+      "filename": "invoice-pound.png",
+      "path": "/icons/invoice-pound.png"
+    },
+    {
+      "nodeId": "4556:2519",
+      "name": "Invoice Euro",
+      "isFrame": true,
+      "filename": "invoice-euro.png",
+      "path": "/icons/invoice-euro.png"
+    },
+    {
+      "nodeId": "4556:2525",
+      "name": "Budget Yen",
+      "isFrame": true,
+      "filename": "budget-yen.png",
+      "path": "/icons/budget-yen.png"
+    },
+    {
+      "nodeId": "4556:2536",
+      "name": "Budget Rupee",
+      "isFrame": true,
+      "filename": "budget-rupee.png",
+      "path": "/icons/budget-rupee.png"
+    },
+    {
+      "nodeId": "4556:2547",
+      "name": "Budget Pound",
+      "isFrame": true,
+      "filename": "budget-pound.png",
+      "path": "/icons/budget-pound.png"
+    },
+    {
+      "nodeId": "4556:2558",
+      "name": "Budget Euro",
+      "isFrame": true,
+      "filename": "budget-euro.png",
+      "path": "/icons/budget-euro.png"
+    },
+    {
+      "nodeId": "4556:2569",
+      "name": "Budget Dollar",
+      "isFrame": true,
+      "filename": "budget-dollar.png",
+      "path": "/icons/budget-dollar.png"
+    },
+    {
+      "nodeId": "4556:2580",
+      "name": "Group By",
+      "isFrame": true,
+      "filename": "group-by.png",
+      "path": "/icons/group-by.png"
+    },
+    {
+      "nodeId": "4556:2585",
+      "name": "Rippling Recommended",
+      "isFrame": true,
+      "filename": "rippling-recommended.png",
+      "path": "/icons/rippling-recommended.png"
+    },
+    {
+      "nodeId": "4556:2592",
+      "name": "Pending Approval",
+      "isFrame": true,
+      "filename": "pending-approval.png",
+      "path": "/icons/pending-approval.png"
+    },
+    {
+      "nodeId": "4556:2600",
+      "name": "Inpolicy",
+      "isFrame": true,
+      "filename": "inpolicy.png",
+      "path": "/icons/inpolicy.png"
+    },
+    {
+      "nodeId": "4556:2606",
+      "name": "Copy",
+      "isFrame": true,
+      "filename": "copy.png",
+      "path": "/icons/copy.png"
+    },
+    {
+      "nodeId": "4556:2613",
+      "name": "Approval",
+      "isFrame": true,
+      "filename": "approval.png",
+      "path": "/icons/approval.png"
+    },
+    {
+      "nodeId": "4556:2619",
+      "name": "Reciept Missing",
+      "isFrame": true,
+      "filename": "reciept-missing.png",
+      "path": "/icons/reciept-missing.png"
+    },
+    {
+      "nodeId": "4556:2629",
+      "name": "Reciept Attached Wrong Amount",
+      "isFrame": true,
+      "filename": "reciept-attached-wrong-amount.png",
+      "path": "/icons/reciept-attached-wrong-amount.png"
+    },
+    {
+      "nodeId": "4556:2639",
+      "name": "Reciept Attached Correct Amount",
+      "isFrame": true,
+      "filename": "reciept-attached-correct-amount.png",
+      "path": "/icons/reciept-attached-correct-amount.png"
+    },
+    {
+      "nodeId": "4556:2649",
+      "name": "Carry On Bag",
+      "isFrame": true,
+      "filename": "carry-on-bag.png",
+      "path": "/icons/carry-on-bag.png"
+    },
+    {
+      "nodeId": "4556:2657",
+      "name": "Out Of Plan",
+      "isFrame": true,
+      "filename": "out-of-plan.png",
+      "path": "/icons/out-of-plan.png"
+    },
+    {
+      "nodeId": "4556:2663",
+      "name": "In Plan",
+      "isFrame": true,
+      "filename": "in-plan.png",
+      "path": "/icons/in-plan.png"
+    },
+    {
+      "nodeId": "4556:2669",
+      "name": "Venn Diagram Or",
+      "isFrame": true,
+      "filename": "venn-diagram-or.png",
+      "path": "/icons/venn-diagram-or.png"
+    },
+    {
+      "nodeId": "4556:2676",
+      "name": "Venn Diagram And",
+      "isFrame": true,
+      "filename": "venn-diagram-and.png",
+      "path": "/icons/venn-diagram-and.png"
+    },
+    {
+      "nodeId": "4556:2681",
+      "name": "Vendor",
+      "isFrame": true,
+      "filename": "vendor.png",
+      "path": "/icons/vendor.png"
+    },
+    {
+      "nodeId": "4556:2687",
+      "name": "Risk",
+      "isFrame": true,
+      "filename": "risk.png",
+      "path": "/icons/risk.png"
+    },
+    {
+      "nodeId": "4556:2694",
+      "name": "Report Monitoring",
+      "isFrame": true,
+      "filename": "report-monitoring.png",
+      "path": "/icons/report-monitoring.png"
+    },
+    {
+      "nodeId": "4556:2703",
+      "name": "Remediation",
+      "isFrame": true,
+      "filename": "remediation.png",
+      "path": "/icons/remediation.png"
+    },
+    {
+      "nodeId": "4556:2709",
+      "name": "Readiness",
+      "isFrame": true,
+      "filename": "readiness.png",
+      "path": "/icons/readiness.png"
+    },
+    {
+      "nodeId": "4556:2717",
+      "name": "Guidepost",
+      "isFrame": true,
+      "filename": "guidepost.png",
+      "path": "/icons/guidepost.png"
+    },
+    {
+      "nodeId": "4556:2722",
+      "name": "Control",
+      "isFrame": true,
+      "filename": "control.png",
+      "path": "/icons/control.png"
+    },
+    {
+      "nodeId": "4556:2728",
+      "name": "Audit Observation",
+      "isFrame": true,
+      "filename": "audit-observation.png",
+      "path": "/icons/audit-observation.png"
+    },
+    {
+      "nodeId": "4556:2735",
+      "name": "Server",
+      "isFrame": true,
+      "filename": "server.png",
+      "path": "/icons/server.png"
+    },
+    {
+      "nodeId": "4556:2742",
+      "name": "Area",
+      "isFrame": true,
+      "filename": "area.png",
+      "path": "/icons/area.png"
+    },
+    {
+      "nodeId": "4556:2749",
+      "name": "Carriage",
+      "isFrame": true,
+      "filename": "carriage.png",
+      "path": "/icons/carriage.png"
+    },
+    {
+      "nodeId": "4556:2755",
+      "name": "Push",
+      "isFrame": true,
+      "filename": "push.png",
+      "path": "/icons/push.png"
+    },
+    {
+      "nodeId": "4556:2762",
+      "name": "V2 Checkbox",
+      "isFrame": true,
+      "filename": "v2-checkbox.png",
+      "path": "/icons/v2-checkbox.png"
+    },
+    {
+      "nodeId": "4556:2767",
+      "name": "Checkbox",
+      "isFrame": true,
+      "filename": "checkbox.png",
+      "path": "/icons/checkbox.png"
+    },
+    {
+      "nodeId": "4556:2772",
+      "name": "Stop At Airport",
+      "isFrame": true,
+      "filename": "stop-at-airport.png",
+      "path": "/icons/stop-at-airport.png"
+    },
+    {
+      "nodeId": "4556:2780",
+      "name": "Flights",
+      "isFrame": true,
+      "filename": "flights.png",
+      "path": "/icons/flights.png"
+    },
+    {
+      "nodeId": "4556:2785",
+      "name": "Fido",
+      "isFrame": true,
+      "filename": "fido.png",
+      "path": "/icons/fido.png"
+    },
+    {
+      "nodeId": "4556:2794",
+      "name": "Checked Bag",
+      "isFrame": true,
+      "filename": "checked-bag.png",
+      "path": "/icons/checked-bag.png"
+    },
+    {
+      "nodeId": "4556:2799",
+      "name": "Past Step Small",
+      "isFrame": true,
+      "filename": "past-step-small.png",
+      "path": "/icons/past-step-small.png"
+    },
+    {
+      "nodeId": "4556:2805",
+      "name": "In Progress Step",
+      "isFrame": true,
+      "filename": "in-progress-step.png",
+      "path": "/icons/in-progress-step.png"
+    },
+    {
+      "nodeId": "4556:2822",
+      "name": "In Progress Step Small",
+      "isFrame": true,
+      "filename": "in-progress-step-small.png",
+      "path": "/icons/in-progress-step-small.png"
+    },
+    {
+      "nodeId": "4556:2835",
+      "name": "Future Step",
+      "isFrame": true,
+      "filename": "future-step.png",
+      "path": "/icons/future-step.png"
+    },
+    {
+      "nodeId": "4556:2862",
+      "name": "Future Step Small",
+      "isFrame": true,
+      "filename": "future-step-small.png",
+      "path": "/icons/future-step-small.png"
+    },
+    {
+      "nodeId": "4556:2881",
+      "name": "Expand Panel",
+      "isFrame": true,
+      "filename": "expand-panel.png",
+      "path": "/icons/expand-panel.png"
+    },
+    {
+      "nodeId": "4556:2886",
+      "name": "Deploy",
+      "isFrame": true,
+      "filename": "deploy.png",
+      "path": "/icons/deploy.png"
+    },
+    {
+      "nodeId": "4556:2896",
+      "name": "Current Step",
+      "isFrame": true,
+      "filename": "current-step.png",
+      "path": "/icons/current-step.png"
+    },
+    {
+      "nodeId": "4556:2901",
+      "name": "Current Step Small",
+      "isFrame": true,
+      "filename": "current-step-small.png",
+      "path": "/icons/current-step-small.png"
+    },
+    {
+      "nodeId": "4556:2906",
+      "name": "Collapse Panel",
+      "isFrame": true,
+      "filename": "collapse-panel.png",
+      "path": "/icons/collapse-panel.png"
+    },
+    {
+      "nodeId": "4556:2911",
+      "name": "Connect Database",
+      "isFrame": true,
+      "filename": "connect-database.png",
+      "path": "/icons/connect-database.png"
+    },
+    {
+      "nodeId": "4556:2916",
+      "name": "Connect Cloud",
+      "isFrame": true,
+      "filename": "connect-cloud.png",
+      "path": "/icons/connect-cloud.png"
+    },
+    {
+      "nodeId": "4556:2921",
+      "name": "Sound",
+      "isFrame": true,
+      "filename": "sound.png",
+      "path": "/icons/sound.png"
+    },
+    {
+      "nodeId": "4556:2931",
+      "name": "Mute",
+      "isFrame": true,
+      "filename": "mute.png",
+      "path": "/icons/mute.png"
+    },
+    {
+      "nodeId": "4556:2939",
+      "name": "Goals",
+      "isFrame": true,
+      "filename": "goals.png",
+      "path": "/icons/goals.png"
+    },
+    {
+      "nodeId": "4556:2944",
+      "name": "One On One",
+      "isFrame": true,
+      "filename": "one-on-one.png",
+      "path": "/icons/one-on-one.png"
+    },
+    {
+      "nodeId": "4556:2957",
+      "name": "Filter By Type",
+      "isFrame": true,
+      "filename": "filter-by-type.png",
+      "path": "/icons/filter-by-type.png"
+    },
+    {
+      "nodeId": "4556:2966",
+      "name": "Flag",
+      "isFrame": true,
+      "filename": "flag.png",
+      "path": "/icons/flag.png"
+    },
+    {
+      "nodeId": "4556:2971",
+      "name": "Font Highlight",
+      "isFrame": true,
+      "filename": "font-highlight.png",
+      "path": "/icons/font-highlight.png"
+    },
+    {
+      "nodeId": "4556:2977",
+      "name": "Talent",
+      "isFrame": true,
+      "filename": "talent.png",
+      "path": "/icons/talent.png"
+    },
+    {
+      "nodeId": "4556:2984",
+      "name": "Sum",
+      "isFrame": true,
+      "filename": "sum.png",
+      "path": "/icons/sum.png"
+    },
+    {
+      "nodeId": "4556:2989",
+      "name": "Custom Apps",
+      "isFrame": true,
+      "filename": "custom-apps.png",
+      "path": "/icons/custom-apps.png"
+    },
+    {
+      "nodeId": "4556:3004",
+      "name": "Client Command",
+      "isFrame": true,
+      "filename": "client-command.png",
+      "path": "/icons/client-command.png"
+    },
+    {
+      "nodeId": "4556:3011",
+      "name": "Add Comment",
+      "isFrame": true,
+      "filename": "add-comment.png",
+      "path": "/icons/add-comment.png"
+    },
+    {
+      "nodeId": "4556:3017",
+      "name": "Qrcode",
+      "isFrame": true,
+      "filename": "qrcode.png",
+      "path": "/icons/qrcode.png"
+    },
+    {
+      "nodeId": "4556:3038",
+      "name": "Authenticator",
+      "isFrame": true,
+      "filename": "authenticator.png",
+      "path": "/icons/authenticator.png"
+    },
+    {
+      "nodeId": "4556:3043",
+      "name": "Thumb Up",
+      "isFrame": true,
+      "filename": "thumb-up.png",
+      "path": "/icons/thumb-up.png"
+    },
+    {
+      "nodeId": "4556:3049",
+      "name": "Thumb Down",
+      "isFrame": true,
+      "filename": "thumb-down.png",
+      "path": "/icons/thumb-down.png"
+    },
+    {
+      "nodeId": "4556:3055",
+      "name": "Talent Signal",
+      "isFrame": true,
+      "filename": "talent-signal.png",
+      "path": "/icons/talent-signal.png"
+    },
+    {
+      "nodeId": "4556:3068",
+      "name": "Startups",
+      "isFrame": true,
+      "filename": "startups.png",
+      "path": "/icons/startups.png"
+    },
+    {
+      "nodeId": "4556:3073",
+      "name": "Play Circle",
+      "isFrame": true,
+      "filename": "play-circle.png",
+      "path": "/icons/play-circle.png"
+    },
+    {
+      "nodeId": "4556:3079",
+      "name": "Pause Circle",
+      "isFrame": true,
+      "filename": "pause-circle.png",
+      "path": "/icons/pause-circle.png"
+    },
+    {
+      "nodeId": "4556:3086",
+      "name": "GPT",
+      "isFrame": true,
+      "filename": "gpt.png",
+      "path": "/icons/gpt.png"
+    },
+    {
+      "nodeId": "4556:3094",
+      "name": "Closed Captions",
+      "isFrame": true,
+      "filename": "closed-captions.png",
+      "path": "/icons/closed-captions.png"
+    },
+    {
+      "nodeId": "4556:3101",
+      "name": "Wrench",
+      "isFrame": true,
+      "filename": "wrench.png",
+      "path": "/icons/wrench.png"
+    },
+    {
+      "nodeId": "4556:3106",
+      "name": "Withdraw",
+      "isFrame": true,
+      "filename": "withdraw.png",
+      "path": "/icons/withdraw.png"
+    },
+    {
+      "nodeId": "4556:3112",
+      "name": "Uninstall",
+      "isFrame": true,
+      "filename": "uninstall.png",
+      "path": "/icons/uninstall.png"
+    },
+    {
+      "nodeId": "4556:3119",
+      "name": "Comments",
+      "isFrame": true,
+      "filename": "comments.png",
+      "path": "/icons/comments.png"
+    },
+    {
+      "nodeId": "4556:3126",
+      "name": "Verified Check",
+      "isFrame": true,
+      "filename": "verified-check.png",
+      "path": "/icons/verified-check.png"
+    },
+    {
+      "nodeId": "4556:3132",
+      "name": "Arrow Right Plus",
+      "isFrame": true,
+      "filename": "arrow-right-plus.png",
+      "path": "/icons/arrow-right-plus.png"
+    },
+    {
+      "nodeId": "4556:3139",
+      "name": "Sun",
+      "isFrame": true,
+      "filename": "sun.png",
+      "path": "/icons/sun.png"
+    },
+    {
+      "nodeId": "4556:3160",
+      "name": "U Shield",
+      "isFrame": true,
+      "filename": "u-shield.png",
+      "path": "/icons/u-shield.png"
+    },
+    {
+      "nodeId": "4556:3166",
+      "name": "User Laptop",
+      "isFrame": true,
+      "filename": "user-laptop.png",
+      "path": "/icons/user-laptop.png"
+    },
+    {
+      "nodeId": "4556:3177",
+      "name": "User File",
+      "isFrame": true,
+      "filename": "user-file.png",
+      "path": "/icons/user-file.png"
+    },
+    {
+      "nodeId": "4556:3186",
+      "name": "User Cog",
+      "isFrame": true,
+      "filename": "user-cog.png",
+      "path": "/icons/user-cog.png"
+    },
+    {
+      "nodeId": "4556:3195",
+      "name": "User Department",
+      "isFrame": true,
+      "filename": "user-department.png",
+      "path": "/icons/user-department.png"
+    },
+    {
+      "nodeId": "4556:3204",
+      "name": "Approve Reject Shield",
+      "isFrame": true,
+      "filename": "approve-reject-shield.png",
+      "path": "/icons/approve-reject-shield.png"
+    },
+    {
+      "nodeId": "4556:3212",
+      "name": "Bandaged Foot",
+      "isFrame": true,
+      "filename": "bandaged-foot.png",
+      "path": "/icons/bandaged-foot.png"
+    },
+    {
+      "nodeId": "4556:3217",
+      "name": "Cog Globe",
+      "isFrame": true,
+      "filename": "cog-globe.png",
+      "path": "/icons/cog-globe.png"
+    },
+    {
+      "nodeId": "4556:3222",
+      "name": "Stacked Coins",
+      "isFrame": true,
+      "filename": "stacked-coins.png",
+      "path": "/icons/stacked-coins.png"
+    },
+    {
+      "nodeId": "4556:3227",
+      "name": "Sandbox",
+      "isFrame": true,
+      "filename": "sandbox.png",
+      "path": "/icons/sandbox.png"
+    },
+    {
+      "nodeId": "4556:3232",
+      "name": "Hand Plus",
+      "isFrame": true,
+      "filename": "hand-plus.png",
+      "path": "/icons/hand-plus.png"
+    },
+    {
+      "nodeId": "4556:3237",
+      "name": "File Shield Plus",
+      "isFrame": true,
+      "filename": "file-shield-plus.png",
+      "path": "/icons/file-shield-plus.png"
+    },
+    {
+      "nodeId": "4556:3242",
+      "name": "Dollar Circle Arrows",
+      "isFrame": true,
+      "filename": "dollar-circle-arrows.png",
+      "path": "/icons/dollar-circle-arrows.png"
+    },
+    {
+      "nodeId": "4556:3247",
+      "name": "Hand Dollar",
+      "isFrame": true,
+      "filename": "hand-dollar.png",
+      "path": "/icons/hand-dollar.png"
+    },
+    {
+      "nodeId": "4556:3252",
+      "name": "Object",
+      "isFrame": true,
+      "filename": "object.png",
+      "path": "/icons/object.png"
+    },
+    {
+      "nodeId": "7040:144",
+      "name": "Employment info Outline",
+      "isFrame": true,
+      "filename": "employment-info-outline.png",
+      "path": "/icons/employment-info-outline.png"
+    },
+    {
+      "nodeId": "7040:146",
+      "name": "Employment info Filled",
+      "isFrame": true,
+      "filename": "employment-info-filled.png",
+      "path": "/icons/employment-info-filled.png"
+    },
+    {
+      "nodeId": "4556:3264",
+      "name": "User Circle Plus",
+      "isFrame": true,
+      "filename": "user-circle-plus.png",
+      "path": "/icons/user-circle-plus.png"
+    },
+    {
+      "nodeId": "4556:3269",
+      "name": "User Ticket",
+      "isFrame": true,
+      "filename": "user-ticket.png",
+      "path": "/icons/user-ticket.png"
+    },
+    {
+      "nodeId": "4556:3274",
+      "name": "Dollar Circle Cog",
+      "isFrame": true,
+      "filename": "dollar-circle-cog.png",
+      "path": "/icons/dollar-circle-cog.png"
+    },
+    {
+      "nodeId": "4556:3280",
+      "name": "Review Cycles",
+      "isFrame": true,
+      "filename": "review-cycles.png",
+      "path": "/icons/review-cycles.png"
+    },
+    {
+      "nodeId": "4556:3285",
+      "name": "API",
+      "isFrame": true,
+      "filename": "api.png",
+      "path": "/icons/api.png"
+    },
+    {
+      "nodeId": "4556:3290",
+      "name": "Seat Basic",
+      "isFrame": true,
+      "filename": "seat-basic.png",
+      "path": "/icons/seat-basic.png"
+    },
+    {
+      "nodeId": "4556:3295",
+      "name": "Seat Standard",
+      "isFrame": true,
+      "filename": "seat-standard.png",
+      "path": "/icons/seat-standard.png"
+    },
+    {
+      "nodeId": "4556:3300",
+      "name": "Seat Plus",
+      "isFrame": true,
+      "filename": "seat-plus.png",
+      "path": "/icons/seat-plus.png"
+    },
+    {
+      "nodeId": "4556:3305",
+      "name": "Seat Premium",
+      "isFrame": true,
+      "filename": "seat-premium.png",
+      "path": "/icons/seat-premium.png"
+    },
+    {
+      "nodeId": "4556:3310",
+      "name": "Seat Luxury",
+      "isFrame": true,
+      "filename": "seat-luxury.png",
+      "path": "/icons/seat-luxury.png"
+    },
+    {
+      "nodeId": "4793:777",
+      "name": "Not Equal To",
+      "isFrame": false,
+      "filename": "not-equal-to.png",
+      "path": "/icons/not-equal-to.png"
+    },
+    {
+      "nodeId": "4793:780",
+      "name": "Greater Than",
+      "isFrame": false,
+      "filename": "greater-than.png",
+      "path": "/icons/greater-than.png"
+    },
+    {
+      "nodeId": "4793:783",
+      "name": "Less Than",
+      "isFrame": false,
+      "filename": "less-than.png",
+      "path": "/icons/less-than.png"
+    },
+    {
+      "nodeId": "4793:788",
+      "name": "Greater Or Equal To",
+      "isFrame": false,
+      "filename": "greater-or-equal-to.png",
+      "path": "/icons/greater-or-equal-to.png"
+    },
+    {
+      "nodeId": "4793:789",
+      "name": "Less Or Equal To",
+      "isFrame": false,
+      "filename": "less-or-equal-to.png",
+      "path": "/icons/less-or-equal-to.png"
+    },
+    {
+      "nodeId": "4793:808",
+      "name": "Equal To",
+      "isFrame": false,
+      "filename": "equal-to.png",
+      "path": "/icons/equal-to.png"
+    },
+    {
+      "nodeId": "4793:809",
+      "name": "Pin Left",
+      "isFrame": false,
+      "filename": "pin-left.png",
+      "path": "/icons/pin-left.png"
+    },
+    {
+      "nodeId": "4793:810",
+      "name": "Pin Right",
+      "isFrame": false,
+      "filename": "pin-right.png",
+      "path": "/icons/pin-right.png"
+    },
+    {
+      "nodeId": "4793:811",
+      "name": "Translate",
+      "isFrame": false,
+      "filename": "translate.png",
+      "path": "/icons/translate.png"
+    },
+    {
+      "nodeId": "4793:812",
+      "name": "Recruiting Filled",
+      "isFrame": false,
+      "filename": "recruiting-filled.png",
+      "path": "/icons/recruiting-filled.png"
+    },
+    {
+      "nodeId": "4793:813",
+      "name": "Recruiting Outline",
+      "isFrame": false,
+      "filename": "recruiting-outline.png",
+      "path": "/icons/recruiting-outline.png"
+    },
+    {
+      "nodeId": "4556:3326",
+      "name": "Page Break",
+      "isFrame": true,
+      "filename": "page-break.png",
+      "path": "/icons/page-break.png"
+    },
+    {
+      "nodeId": "4556:3331",
+      "name": "Page Header Footer",
+      "isFrame": true,
+      "filename": "page-header-footer.png",
+      "path": "/icons/page-header-footer.png"
+    },
+    {
+      "nodeId": "4556:3336",
+      "name": "Page Header",
+      "isFrame": true,
+      "filename": "page-header.png",
+      "path": "/icons/page-header.png"
+    },
+    {
+      "nodeId": "4556:3341",
+      "name": "Page Footer",
+      "isFrame": true,
+      "filename": "page-footer.png",
+      "path": "/icons/page-footer.png"
+    },
+    {
+      "nodeId": "4556:3346",
+      "name": "Transformations",
+      "isFrame": true,
+      "filename": "transformations.png",
+      "path": "/icons/transformations.png"
+    },
+    {
+      "nodeId": "4556:3351",
+      "name": "V2 Key",
+      "isFrame": true,
+      "filename": "v2-key.png",
+      "path": "/icons/v2-key.png"
+    },
+    {
+      "nodeId": "4556:3356",
+      "name": "Report Checklist",
+      "isFrame": true,
+      "filename": "report-checklist.png",
+      "path": "/icons/report-checklist.png"
+    },
+    {
+      "nodeId": "4556:3361",
+      "name": "Kiosk",
+      "isFrame": true,
+      "filename": "kiosk.png",
+      "path": "/icons/kiosk.png"
+    },
+    {
+      "nodeId": "4556:3375",
+      "name": "Budget Hierarchy",
+      "isFrame": true,
+      "filename": "budget-hierarchy.png",
+      "path": "/icons/budget-hierarchy.png"
+    },
+    {
+      "nodeId": "4556:3380",
+      "name": "Referrals",
+      "isFrame": true,
+      "filename": "referrals.png",
+      "path": "/icons/referrals.png"
+    },
+    {
+      "nodeId": "4556:3385",
+      "name": "Hand Laptop",
+      "isFrame": true,
+      "filename": "hand-laptop.png",
+      "path": "/icons/hand-laptop.png"
+    },
+    {
+      "nodeId": "4556:3390",
+      "name": "Hand User",
+      "isFrame": true,
+      "filename": "hand-user.png",
+      "path": "/icons/hand-user.png"
+    },
+    {
+      "nodeId": "4556:3395",
+      "name": "Hand Time",
+      "isFrame": true,
+      "filename": "hand-time.png",
+      "path": "/icons/hand-time.png"
+    },
+    {
+      "nodeId": "4556:3400",
+      "name": "User Form Edit",
+      "isFrame": true,
+      "filename": "user-form-edit.png",
+      "path": "/icons/user-form-edit.png"
+    },
+    {
+      "nodeId": "4556:3405",
+      "name": "Hourglass Checked",
+      "isFrame": true,
+      "filename": "hourglass-checked.png",
+      "path": "/icons/hourglass-checked.png"
+    },
+    {
+      "nodeId": "4556:3410",
+      "name": "User Group Checked",
+      "isFrame": true,
+      "filename": "user-group-checked.png",
+      "path": "/icons/user-group-checked.png"
+    },
+    {
+      "nodeId": "4556:3415",
+      "name": "Pie Chart Graph",
+      "isFrame": true,
+      "filename": "pie-chart-graph.png",
+      "path": "/icons/pie-chart-graph.png"
+    },
+    {
+      "nodeId": "4556:3420",
+      "name": "Time Graph",
+      "isFrame": true,
+      "filename": "time-graph.png",
+      "path": "/icons/time-graph.png"
+    },
+    {
+      "nodeId": "4556:3425",
+      "name": "User Graph",
+      "isFrame": true,
+      "filename": "user-graph.png",
+      "path": "/icons/user-graph.png"
+    },
+    {
+      "nodeId": "4556:3430",
+      "name": "Heart Graph",
+      "isFrame": true,
+      "filename": "heart-graph.png",
+      "path": "/icons/heart-graph.png"
+    },
+    {
+      "nodeId": "4556:3435",
+      "name": "Star Graph",
+      "isFrame": true,
+      "filename": "star-graph.png",
+      "path": "/icons/star-graph.png"
+    },
+    {
+      "nodeId": "4556:3440",
+      "name": "Laptop Graph",
+      "isFrame": true,
+      "filename": "laptop-graph.png",
+      "path": "/icons/laptop-graph.png"
+    },
+    {
+      "nodeId": "4556:3445",
+      "name": "Credit Card Graph",
+      "isFrame": true,
+      "filename": "credit-card-graph.png",
+      "path": "/icons/credit-card-graph.png"
+    },
+    {
+      "nodeId": "4556:3450",
+      "name": "Hand Credit Card",
+      "isFrame": true,
+      "filename": "hand-credit-card.png",
+      "path": "/icons/hand-credit-card.png"
+    },
+    {
+      "nodeId": "4793:816",
+      "name": "Dollar Sign Graph",
+      "isFrame": false,
+      "filename": "dollar-sign-graph.png",
+      "path": "/icons/dollar-sign-graph.png"
+    },
+    {
+      "nodeId": "4556:3456",
+      "name": "Inbox",
+      "isFrame": true,
+      "filename": "inbox.png",
+      "path": "/icons/inbox.png"
+    },
+    {
+      "nodeId": "4556:3461",
+      "name": "Password Refresh",
+      "isFrame": true,
+      "filename": "password-refresh.png",
+      "path": "/icons/password-refresh.png"
+    },
+    {
+      "nodeId": "4881:384",
+      "name": "Heading 1",
+      "isFrame": false,
+      "filename": "heading-1.png",
+      "path": "/icons/heading-1.png"
+    },
+    {
+      "nodeId": "4881:385",
+      "name": "Heading 2",
+      "isFrame": false,
+      "filename": "heading-2.png",
+      "path": "/icons/heading-2.png"
+    },
+    {
+      "nodeId": "4881:386",
+      "name": "Heading 3",
+      "isFrame": false,
+      "filename": "heading-3.png",
+      "path": "/icons/heading-3.png"
+    },
+    {
+      "nodeId": "4881:387",
+      "name": "Heading 4",
+      "isFrame": false,
+      "filename": "heading-4.png",
+      "path": "/icons/heading-4.png"
+    },
+    {
+      "nodeId": "4881:388",
+      "name": "Heading 5",
+      "isFrame": false,
+      "filename": "heading-5.png",
+      "path": "/icons/heading-5.png"
+    },
+    {
+      "nodeId": "4881:389",
+      "name": "Heading 6",
+      "isFrame": false,
+      "filename": "heading-6.png",
+      "path": "/icons/heading-6.png"
+    },
+    {
+      "nodeId": "4556:3472",
+      "name": "Users Stacked",
+      "isFrame": true,
+      "filename": "users-stacked.png",
+      "path": "/icons/users-stacked.png"
+    },
+    {
+      "nodeId": "4556:3477",
+      "name": "Image Alignment Center",
+      "isFrame": true,
+      "filename": "image-alignment-center.png",
+      "path": "/icons/image-alignment-center.png"
+    },
+    {
+      "nodeId": "4556:3482",
+      "name": "Image Alignment Right",
+      "isFrame": true,
+      "filename": "image-alignment-right.png",
+      "path": "/icons/image-alignment-right.png"
+    },
+    {
+      "nodeId": "4556:3487",
+      "name": "Image Alignment Left",
+      "isFrame": true,
+      "filename": "image-alignment-left.png",
+      "path": "/icons/image-alignment-left.png"
+    },
+    {
+      "nodeId": "4556:3492",
+      "name": "EDI",
+      "isFrame": true,
+      "filename": "edi.png",
+      "path": "/icons/edi.png"
+    },
+    {
+      "nodeId": "4556:3497",
+      "name": "Cup Droplet",
+      "isFrame": true,
+      "filename": "cup-droplet.png",
+      "path": "/icons/cup-droplet.png"
+    },
+    {
+      "nodeId": "4556:3502",
+      "name": "Info Speach Box",
+      "isFrame": true,
+      "filename": "info-speach-box.png",
+      "path": "/icons/info-speach-box.png"
+    },
+    {
+      "nodeId": "4757:781",
+      "name": "Split Arrows",
+      "isFrame": false,
+      "filename": "split-arrows.png",
+      "path": "/icons/split-arrows.png"
+    },
+    {
+      "nodeId": "4793:819",
+      "name": "Line Dots Line",
+      "isFrame": false,
+      "filename": "line-dots-line.png",
+      "path": "/icons/line-dots-line.png"
+    },
+    {
+      "nodeId": "4556:3509",
+      "name": "Speach Box Label",
+      "isFrame": true,
+      "filename": "speach-box-label.png",
+      "path": "/icons/speach-box-label.png"
+    },
+    {
+      "nodeId": "4556:3514",
+      "name": "Cursor Circle",
+      "isFrame": true,
+      "filename": "cursor-circle.png",
+      "path": "/icons/cursor-circle.png"
+    },
+    {
+      "nodeId": "4556:3519",
+      "name": "Data Transfer",
+      "isFrame": true,
+      "filename": "data-transfer.png",
+      "path": "/icons/data-transfer.png"
+    },
+    {
+      "nodeId": "4881:394",
+      "name": "Loader",
+      "isFrame": false,
+      "filename": "loader.png",
+      "path": "/icons/loader.png"
+    },
+    {
+      "nodeId": "4556:3525",
+      "name": "Hierarchy Horizontal",
+      "isFrame": true,
+      "filename": "hierarchy-horizontal.png",
+      "path": "/icons/hierarchy-horizontal.png"
+    },
+    {
+      "nodeId": "4556:3530",
+      "name": "Automatic Transmission",
+      "isFrame": true,
+      "filename": "automatic-transmission.png",
+      "path": "/icons/automatic-transmission.png"
+    },
+    {
+      "nodeId": "4556:3535",
+      "name": "Manual Transmission",
+      "isFrame": true,
+      "filename": "manual-transmission.png",
+      "path": "/icons/manual-transmission.png"
+    },
+    {
+      "nodeId": "4556:3540",
+      "name": "Gas Pump",
+      "isFrame": true,
+      "filename": "gas-pump.png",
+      "path": "/icons/gas-pump.png"
+    },
+    {
+      "nodeId": "4556:3545",
+      "name": "Electrical Cord Thunderbolt",
+      "isFrame": true,
+      "filename": "electrical-cord-thunderbolt.png",
+      "path": "/icons/electrical-cord-thunderbolt.png"
+    },
+    {
+      "nodeId": "4556:3550",
+      "name": "Hand Stacked Coins",
+      "isFrame": true,
+      "filename": "hand-stacked-coins.png",
+      "path": "/icons/hand-stacked-coins.png"
+    },
+    {
+      "nodeId": "4556:3555",
+      "name": "Circle Stop",
+      "isFrame": true,
+      "filename": "circle-stop.png",
+      "path": "/icons/circle-stop.png"
+    },
+    {
+      "nodeId": "4793:822",
+      "name": "No Wifi",
+      "isFrame": false,
+      "filename": "no-wifi.png",
+      "path": "/icons/no-wifi.png"
+    },
+    {
+      "nodeId": "4793:825",
+      "name": "Stretch",
+      "isFrame": false,
+      "filename": "stretch.png",
+      "path": "/icons/stretch.png"
+    },
+    {
+      "nodeId": "4793:828",
+      "name": "Rippling",
+      "isFrame": false,
+      "filename": "rippling.png",
+      "path": "/icons/rippling.png"
+    },
+    {
+      "nodeId": "4859:758",
+      "name": "Long Answer",
+      "isFrame": true,
+      "filename": "long-answer.png",
+      "path": "/icons/long-answer.png"
+    },
+    {
+      "nodeId": "4587:782",
+      "name": "Group Columns",
+      "isFrame": true,
+      "filename": "group-columns.png",
+      "path": "/icons/group-columns.png"
+    },
+    {
+      "nodeId": "4586:1093",
+      "name": "Ungroup Columns",
+      "isFrame": true,
+      "filename": "ungroup-columns.png",
+      "path": "/icons/ungroup-columns.png"
+    },
+    {
+      "nodeId": "4629:996",
+      "name": "Wallet Card",
+      "isFrame": true,
+      "filename": "wallet-card.png",
+      "path": "/icons/wallet-card.png"
+    },
+    {
+      "nodeId": "5098:255",
+      "name": "Text Direction Arrow Left",
+      "isFrame": false,
+      "filename": "text-direction-arrow-left.png",
+      "path": "/icons/text-direction-arrow-left.png"
+    },
+    {
+      "nodeId": "5098:256",
+      "name": "Text Direction Arrow Right",
+      "isFrame": false,
+      "filename": "text-direction-arrow-right.png",
+      "path": "/icons/text-direction-arrow-right.png"
+    },
+    {
+      "nodeId": "5458:716",
+      "name": "Slide Control Arrows",
+      "isFrame": false,
+      "filename": "slide-control-arrows.png",
+      "path": "/icons/slide-control-arrows.png"
+    },
+    {
+      "nodeId": "5501:361",
+      "name": "Users Connected",
+      "isFrame": false,
+      "filename": "users-connected.png",
+      "path": "/icons/users-connected.png"
+    },
+    {
+      "nodeId": "6030:658",
+      "name": "Location Pins",
+      "isFrame": true,
+      "filename": "location-pins.png",
+      "path": "/icons/location-pins.png"
+    },
+    {
+      "nodeId": "6412:593",
+      "name": "Sidebar",
+      "isFrame": true,
+      "filename": "sidebar.png",
+      "path": "/icons/sidebar.png"
+    },
+    {
+      "nodeId": "6412:604",
+      "name": "Floating Left Interface",
+      "isFrame": true,
+      "filename": "floating-left-interface.png",
+      "path": "/icons/floating-left-interface.png"
+    },
+    {
+      "nodeId": "6412:614",
+      "name": "Floating Right Interface",
+      "isFrame": true,
+      "filename": "floating-right-interface.png",
+      "path": "/icons/floating-right-interface.png"
+    },
+    {
+      "nodeId": "6390:3185",
+      "name": "Shield Car",
+      "isFrame": true,
+      "filename": "shield-car.png",
+      "path": "/icons/shield-car.png"
+    },
+    {
+      "nodeId": "6390:3227",
+      "name": "Shield Ribbon",
+      "isFrame": true,
+      "filename": "shield-ribbon.png",
+      "path": "/icons/shield-ribbon.png"
+    },
+    {
+      "nodeId": "6390:3236",
+      "name": "Shield Wave Pulse",
+      "isFrame": true,
+      "filename": "shield-wave-pulse.png",
+      "path": "/icons/shield-wave-pulse.png"
+    },
+    {
+      "nodeId": "6390:3245",
+      "name": "Shield Tooth",
+      "isFrame": true,
+      "filename": "shield-tooth.png",
+      "path": "/icons/shield-tooth.png"
+    },
+    {
+      "nodeId": "6390:3254",
+      "name": "Shield Calander",
+      "isFrame": true,
+      "filename": "shield-calander.png",
+      "path": "/icons/shield-calander.png"
+    },
+    {
+      "nodeId": "6437:37",
+      "name": "Shield Hearts",
+      "isFrame": true,
+      "filename": "shield-hearts.png",
+      "path": "/icons/shield-hearts.png"
+    },
+    {
+      "nodeId": "6390:3263",
+      "name": "Shield Cross",
+      "isFrame": true,
+      "filename": "shield-cross.png",
+      "path": "/icons/shield-cross.png"
+    },
+    {
+      "nodeId": "6437:364",
+      "name": "Shield Building Hospital",
+      "isFrame": true,
+      "filename": "shield-building-hospital.png",
+      "path": "/icons/shield-building-hospital.png"
+    },
+    {
+      "nodeId": "6390:3272",
+      "name": "Shield Circle P",
+      "isFrame": true,
+      "filename": "shield-circle-p.png",
+      "path": "/icons/shield-circle-p.png"
+    },
+    {
+      "nodeId": "6390:3282",
+      "name": "Shield Clock",
+      "isFrame": true,
+      "filename": "shield-clock.png",
+      "path": "/icons/shield-clock.png"
+    },
+    {
+      "nodeId": "6390:3291",
+      "name": "Shield Train",
+      "isFrame": true,
+      "filename": "shield-train.png",
+      "path": "/icons/shield-train.png"
+    },
+    {
+      "nodeId": "6390:3300",
+      "name": "Shield Eye",
+      "isFrame": true,
+      "filename": "shield-eye.png",
+      "path": "/icons/shield-eye.png"
+    },
+    {
+      "nodeId": "6390:3309",
+      "name": "Shield User Hand Up",
+      "isFrame": true,
+      "filename": "shield-user-hand-up.png",
+      "path": "/icons/shield-user-hand-up.png"
+    },
+    {
+      "nodeId": "6540:673",
+      "name": "User Clock",
+      "isFrame": true,
+      "filename": "user-clock.png",
+      "path": "/icons/user-clock.png"
+    },
+    {
+      "nodeId": "6540:678",
+      "name": "Coin Stack Arrows",
+      "isFrame": true,
+      "filename": "coin-stack-arrows.png",
+      "path": "/icons/coin-stack-arrows.png"
+    },
+    {
+      "nodeId": "6540:683",
+      "name": "Credit Cards",
+      "isFrame": true,
+      "filename": "credit-cards.png",
+      "path": "/icons/credit-cards.png"
+    },
+    {
+      "nodeId": "6540:688",
+      "name": "Server Check",
+      "isFrame": true,
+      "filename": "server-check.png",
+      "path": "/icons/server-check.png"
+    },
+    {
+      "nodeId": "6540:698",
+      "name": "Eor",
+      "isFrame": false,
+      "filename": "eor.png",
+      "path": "/icons/eor.png"
+    },
+    {
+      "nodeId": "6589:598",
+      "name": "Newspaper",
+      "isFrame": true,
+      "filename": "newspaper.png",
+      "path": "/icons/newspaper.png"
+    },
+    {
+      "nodeId": "6589:607",
+      "name": "Tag",
+      "isFrame": true,
+      "filename": "tag.png",
+      "path": "/icons/tag.png"
+    },
+    {
+      "nodeId": "6597:947",
+      "name": "Paint Roller",
+      "isFrame": true,
+      "filename": "paint-roller.png",
+      "path": "/icons/paint-roller.png"
+    },
+    {
+      "nodeId": "6961:526",
+      "name": "Graph Coin Stack",
+      "isFrame": true,
+      "filename": "graph-coin-stack.png",
+      "path": "/icons/graph-coin-stack.png"
+    },
+    {
+      "nodeId": "7223:341",
+      "name": "File User Check",
+      "isFrame": true,
+      "filename": "file-user-check.png",
+      "path": "/icons/file-user-check.png"
+    },
+    {
+      "nodeId": "7209:370",
+      "name": "Magnifying Glass Star",
+      "isFrame": true,
+      "filename": "magnifying-glass-star.png",
+      "path": "/icons/magnifying-glass-star.png"
+    },
+    {
+      "nodeId": "7309:143",
+      "name": "File Check",
+      "isFrame": true,
+      "filename": "file-check.png",
+      "path": "/icons/file-check.png"
+    },
+    {
+      "nodeId": "7788:143",
+      "name": "Chart 3 Uneven Vertical Bars",
+      "isFrame": true,
+      "filename": "chart-3-uneven-vertical-bars.png",
+      "path": "/icons/chart-3-uneven-vertical-bars.png"
+    },
+    {
+      "nodeId": "7792:143",
+      "name": "RPass",
+      "isFrame": true,
+      "filename": "rpass.png",
+      "path": "/icons/rpass.png"
+    },
+    {
+      "nodeId": "7788:148",
+      "name": "Report",
+      "isFrame": true,
+      "filename": "report.png",
+      "path": "/icons/report.png"
+    }
+  ]
+}

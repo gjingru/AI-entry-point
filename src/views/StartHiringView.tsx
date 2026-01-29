@@ -1738,7 +1738,7 @@ export default function StartHiringView() {
             onClick={() => handleOptionClick('manual')}
             className="font-medium leading-5 text-[#1e4aa9] text-[14px] text-center w-full cursor-pointer hover:underline transition-colors pt-[1.5em]"
           >
-            Enter hire details manually from scratch
+            Enter hire details manually instead
           </p>
         </div>
       </div>

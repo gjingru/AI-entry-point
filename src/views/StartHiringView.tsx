@@ -1069,69 +1069,32 @@ export default function StartHiringView() {
         }
       }, 100);
     } else if (option === 'copy') {
-      // Pre-fill main input box with "Hire by copy information from @employee"
-      const prefillText = 'Hire by copy information from @employee';
-      setPromptValue(prefillText);
-      setIsProgrammaticOpen(true);
+      // Pre-fill main input box with reference text and field prompts (strong type, no dropdown)
+      const prefillText = 'Reference information from @Sarah Jones\n\n- New hire\'s name:\n- Email:\n- Start date:';
+      const mentionKey = '@Sarah Jones';
       
-      // Open the dropdown after a short delay to ensure contentEditable is updated
+      // Add to selected mentions for berry color styling
+      const updatedMentions = new Set([...selectedMentions, mentionKey]);
+      setSelectedMentions(updatedMentions);
+      setPromptValue(prefillText);
+      
+      // Update the contentEditable without triggering the dropdown
       setTimeout(() => {
         if (contentEditableRef.current) {
           // Focus the contentEditable first
           contentEditableRef.current.focus();
           
-          // Set the content
-          contentEditableRef.current.innerHTML = formatTextWithMentions(prefillText, selectedMentions);
+          // Set the content with the mention formatted in berry color
+          contentEditableRef.current.innerHTML = formatTextWithMentions(prefillText, updatedMentions);
           
-          // Move cursor to the end of "@employee"
+          // Move cursor to the end
           const selection = window.getSelection();
           if (selection && contentEditableRef.current) {
-            const cursorPos = prefillText.length;
-            
-            // Use TreeWalker to find the correct text node and position
-            const walker = document.createTreeWalker(
-              contentEditableRef.current,
-              NodeFilter.SHOW_TEXT,
-              null
-            );
-            
-            let currentPos = 0;
-            let targetNode: Node | null = null;
-            let targetOffset = 0;
-            
-            let node;
-            while (node = walker.nextNode()) {
-              const nodeLength = node.textContent?.length || 0;
-              if (currentPos + nodeLength >= cursorPos) {
-                targetNode = node;
-                targetOffset = cursorPos - currentPos;
-                break;
-              }
-              currentPos += nodeLength;
-            }
-            
-            if (targetNode) {
-              const range = document.createRange();
-              range.setStart(targetNode, targetOffset);
-              range.collapse(true);
-              selection.removeAllRanges();
-              selection.addRange(range);
-            } else {
-              // Fallback: move to end
-              const range = document.createRange();
-              range.selectNodeContents(contentEditableRef.current);
-              range.collapse(false);
-              selection.removeAllRanges();
-              selection.addRange(range);
-            }
-            
-            // Trigger the mention detection to show dropdown
-            detectMention(prefillText, cursorPos);
-            
-            // Reset the flag after a short delay
-            setTimeout(() => {
-              setIsProgrammaticOpen(false);
-            }, 300);
+            const range = document.createRange();
+            range.selectNodeContents(contentEditableRef.current);
+            range.collapse(false);
+            selection.removeAllRanges();
+            selection.addRange(range);
           }
         }
       }, 100);
@@ -1165,8 +1128,8 @@ export default function StartHiringView() {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col items-center pt-16 pb-8 px-0">
-        <div className="w-full max-w-[744px] px-4">
+      <div className="flex flex-col items-center pt-16 pb-8 px-4">
+        <div className="w-full max-w-[780px]">
           {/* Title Section */}
           <div className="flex flex-col items-center gap-6 mb-6">
             <div className="flex items-center gap-2.5 justify-center">
@@ -1187,7 +1150,7 @@ export default function StartHiringView() {
           </div>
 
           {/* Prompt Box */}
-          <div className="bg-white border border-[rgba(0,0,0,0.2)] border-solid flex flex-col items-start overflow-visible p-3 relative rounded-xl shrink-0 w-full mb-4 focus-within:outline-none focus-within:ring-0">
+          <div className="bg-white border border-[rgba(0,0,0,0.2)] border-solid flex flex-col items-start overflow-visible p-3 relative rounded-xl shrink-0 w-full mb-3 focus-within:outline-none focus-within:ring-0 box-border">
             <div className="flex flex-col gap-[13px] min-h-[77px] items-end relative shrink-0 w-full">
               <div className="flex flex-1 flex-col gap-2 items-start min-h-0 min-w-0 relative w-full">
                 <div className="flex gap-2 items-center relative shrink-0 w-full">
@@ -1536,7 +1499,7 @@ export default function StartHiringView() {
                   )}
                 </div>
                 <div className="flex items-center relative shrink-0">
-                  {/* Primary Icon Button */}
+                  {/* Primary Button */}
                   <button 
                     onClick={() => {
                       if (promptValue.trim()) {
@@ -1558,7 +1521,7 @@ export default function StartHiringView() {
                       }
                     }}
                     disabled={!promptValue.trim()}
-                    className="flex gap-2.5 items-center justify-center relative shrink-0 size-8 rounded-xl bg-[#7A005D] hover:bg-[#9F1E7A] transition-colors border border-[#7A005D] border-solid disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex gap-2 items-center justify-center relative shrink-0 h-8 px-3 rounded-xl bg-[#7A005D] hover:bg-[#9F1E7A] transition-colors border border-[#7A005D] border-solid disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <img 
                       alt="Send" 
@@ -1570,162 +1533,121 @@ export default function StartHiringView() {
                         target.style.display = 'none';
                       }}
                     />
+                    <span className="font-medium text-[14px] text-white whitespace-nowrap">Quick start and review</span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Option Cards - 2x2 Grid - Hidden when prompt has content */}
+          {/* Option Cards - 3 in a row - Hidden when prompt has content */}
           {!promptValue.trim() && (
-          <div className={`flex flex-col gap-6 items-start ${selectedMentions.size > 0 ? 'relative z-40' : ''}`}>
-            <div className="flex flex-col gap-2 w-full">
-              {/* First Row */}
-              <div className="flex gap-3 w-full">
-                {/* Option 1: Upload a document */}
-                <div 
-                  onClick={() => setShowUploadModal(true)}
-                  className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
-                >
-                  <div className="flex gap-2 items-start w-full">
-                    {/* Icon Avatar with border and background */}
-                    <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
-                      <div 
-                        className="block max-w-none size-4"
-                        style={{
-                          maskImage: `url(${icons.DocumentOutline})`,
-                          maskSize: 'contain',
-                          maskRepeat: 'no-repeat',
-                          maskPosition: 'center',
-                          WebkitMaskImage: `url(${icons.DocumentOutline})`,
-                          WebkitMaskSize: 'contain',
-                          WebkitMaskRepeat: 'no-repeat',
-                          WebkitMaskPosition: 'center',
-                          backgroundColor: '#971e7A'
-                        }}
-                        role="img"
-                        aria-label="Document"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                      <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
-                        Upload a document
-                      </p>
-                      <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
-                        Hire using an offer letter or CSV
-                      </p>
-                    </div>
+          <div className={`w-full ${selectedMentions.size > 0 ? 'relative z-40' : ''}`}>
+            <div className="flex gap-3 w-full">
+              {/* Option 1: Upload a document */}
+              <div 
+                onClick={() => setShowUploadModal(true)}
+                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-center p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+              >
+                <div className="flex gap-2 items-center w-full">
+                  {/* Icon Avatar with border and background */}
+                  <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
+                    <div 
+                      className="block max-w-none size-4"
+                      style={{
+                        maskImage: `url(${icons.DocumentOutline})`,
+                        maskSize: 'contain',
+                        maskRepeat: 'no-repeat',
+                        maskPosition: 'center',
+                        WebkitMaskImage: `url(${icons.DocumentOutline})`,
+                        WebkitMaskSize: 'contain',
+                        WebkitMaskRepeat: 'no-repeat',
+                        WebkitMaskPosition: 'center',
+                        backgroundColor: '#971e7A'
+                      }}
+                      role="img"
+                      aria-label="Document"
+                    />
                   </div>
-                </div>
-
-                {/* Option 2: Reference an existing employee */}
-                <div 
-                  onClick={() => handleOptionClick('copy')}
-                  className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
-                >
-                  <div className="flex gap-2 items-start w-full">
-                    {/* Icon Avatar with border and background */}
-                    <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
-                      <div 
-                        className="block max-w-none size-4"
-                        style={{
-                          maskImage: `url(${icons.CopyOutline})`,
-                          maskSize: 'contain',
-                          maskRepeat: 'no-repeat',
-                          maskPosition: 'center',
-                          WebkitMaskImage: `url(${icons.CopyOutline})`,
-                          WebkitMaskSize: 'contain',
-                          WebkitMaskRepeat: 'no-repeat',
-                          WebkitMaskPosition: 'center',
-                          backgroundColor: '#971e7A'
-                        }}
-                        role="img"
-                        aria-label="Copy"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                      <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
-                        Reference an existing employee
-                      </p>
-                      <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
-                        Reuse an employee's data and adjust
-                      </p>
-                    </div>
+                  <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
+                      Upload a document
+                    </p>
+                    <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
+                      Hire using an offer letter or CSV
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* Second Row */}
-              <div className="flex gap-3 w-full">
-                {/* Option 3: Rehire */}
-                <div 
-                  onClick={() => handleOptionClick('rehire')}
-                  className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
-                >
-                  <div className="flex gap-2 items-start w-full">
-                    {/* Icon Avatar with border and background */}
-                    <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
-                      <div 
-                        className="block max-w-none size-4"
-                        style={{
-                          maskImage: `url(${icons.RefreshOutline})`,
-                          maskSize: 'contain',
-                          maskRepeat: 'no-repeat',
-                          maskPosition: 'center',
-                          WebkitMaskImage: `url(${icons.RefreshOutline})`,
-                          WebkitMaskSize: 'contain',
-                          WebkitMaskRepeat: 'no-repeat',
-                          WebkitMaskPosition: 'center',
-                          backgroundColor: '#971e7A'
-                        }}
-                        role="img"
-                        aria-label="Rehire"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                      <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
-                        Rehire
-                      </p>
-                      <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
-                        Rehire a former employee or contractor
-                      </p>
-                    </div>
+              {/* Option 2: Reference an existing employee */}
+              <div 
+                onClick={() => handleOptionClick('copy')}
+                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-center p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+              >
+                <div className="flex gap-2 items-center w-full">
+                  {/* Icon Avatar with border and background */}
+                  <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
+                    <div 
+                      className="block max-w-none size-4"
+                      style={{
+                        maskImage: `url(${icons.CopyOutline})`,
+                        maskSize: 'contain',
+                        maskRepeat: 'no-repeat',
+                        maskPosition: 'center',
+                        WebkitMaskImage: `url(${icons.CopyOutline})`,
+                        WebkitMaskSize: 'contain',
+                        WebkitMaskRepeat: 'no-repeat',
+                        WebkitMaskPosition: 'center',
+                        backgroundColor: '#971e7A'
+                      }}
+                      role="img"
+                      aria-label="Copy"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
+                      Use Sarah Jones as a reference
+                    </p>
+                    <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
+                      Reuse an employee's data and adjust
+                    </p>
                   </div>
                 </div>
+              </div>
 
-                {/* Option 4: Hire ATS candidate */}
-                <div 
-                  onClick={() => handleOptionClick('ats')}
-                  className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
-                >
-                  <div className="flex gap-2 items-start w-full">
-                    {/* Icon Avatar with border and background */}
-                    <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
-                      <div 
-                        className="block max-w-none size-4"
-                        style={{
-                          maskImage: `url(${icons.SearchOutline})`,
-                          maskSize: 'contain',
-                          maskRepeat: 'no-repeat',
-                          maskPosition: 'center',
-                          WebkitMaskImage: `url(${icons.SearchOutline})`,
-                          WebkitMaskSize: 'contain',
-                          WebkitMaskRepeat: 'no-repeat',
-                          WebkitMaskPosition: 'center',
-                          backgroundColor: '#971e7A'
-                        }}
-                        role="img"
-                        aria-label="Search"
-                      />
-                    </div>
-                    <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                      <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
-                        Hire ATS candidate
-                      </p>
-                      <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
-                        Hire directly from an ATS requisition
-                      </p>
-                    </div>
+              {/* Option 3: Hire ATS candidate */}
+              <div 
+                onClick={() => handleOptionClick('ats')}
+                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-center p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+              >
+                <div className="flex gap-2 items-center w-full">
+                  {/* Icon Avatar with border and background */}
+                  <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
+                    <div 
+                      className="block max-w-none size-4"
+                      style={{
+                        maskImage: `url(${icons.SearchOutline})`,
+                        maskSize: 'contain',
+                        maskRepeat: 'no-repeat',
+                        maskPosition: 'center',
+                        WebkitMaskImage: `url(${icons.SearchOutline})`,
+                        WebkitMaskSize: 'contain',
+                        WebkitMaskRepeat: 'no-repeat',
+                        WebkitMaskPosition: 'center',
+                        backgroundColor: '#971e7A'
+                      }}
+                      role="img"
+                      aria-label="Search"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                    <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
+                      Hire ATS candidate James Eames
+                    </p>
+                    <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
+                      Hire directly from an ATS requisition
+                    </p>
                   </div>
                 </div>
               </div>

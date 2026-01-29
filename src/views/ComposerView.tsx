@@ -42,6 +42,30 @@ interface HiringSessionData {
   };
 }
 
+// Seed data from Sarah Jones - used when referencing her for a new hire
+// Excludes: first_name, last_name, invite_email, start_date (these are for the new hire)
+const SARAH_JONES_SEED_DATA: Partial<HiringSessionData> = {
+  work: {
+    employment_classification: 'Employee',
+    work_location_id: 'San Francisco, CA',
+    employment_type_id: 'Full-time',
+    overtime_exemption: 'Exempt',
+  },
+  role: {
+    start_date: '', // Leave empty - new hire needs to provide
+    title: 'Software Engineer',
+    level: 'L4',
+    department_id: 'Engineering',
+    team_id: 'Platform',
+    manager: 'Craig Workman',
+  },
+  comp: {
+    amount: '180000',
+    currency: 'USD',
+    frequency: 'Year',
+  },
+};
+
 
 interface ComposerViewLocationState {
   userInput?: string;
@@ -463,32 +487,57 @@ export default function ComposerView() {
       hasInitializedMessages.current = true;
       setUserInput(inputText.trim());
       
+      // Check if this is referencing Sarah Jones - seed her data (except personal info and start date)
+      const isSarahJonesReference = inputText.toLowerCase().includes('@sarah jones') || 
+                                     inputText.toLowerCase().includes('sarah jones');
+      
       // Parse fields from initial input and update formData
       const initialMessages = [{ role: 'user' as const, content: inputText.trim() }];
       const updates = parseFieldsFromMessages(initialMessages, formData);
       console.log('Initial input parsing:', inputText, 'Updates:', updates);
-      if (Object.keys(updates.personal || {}).length > 0 || Object.keys(updates.role || {}).length > 0) {
-        setFormData((prev) => {
-          const updated = { ...prev };
-          if (updates.personal) {
-            // Only update fields that have values
-            if (updates.personal.first_name) updated.personal.first_name = updates.personal.first_name;
-            if (updates.personal.last_name) updated.personal.last_name = updates.personal.last_name;
-            if (updates.personal.invite_email) updated.personal.invite_email = updates.personal.invite_email;
-            if (updates.personal.personal_email) updated.personal.personal_email = updates.personal.personal_email;
+      
+      setFormData((prev) => {
+        const updated = { ...prev };
+        
+        // If referencing Sarah Jones, seed her data first (excluding first_name, last_name, invite_email, start_date)
+        if (isSarahJonesReference && SARAH_JONES_SEED_DATA) {
+          console.log('Seeding Sarah Jones data');
+          // Apply work data
+          if (SARAH_JONES_SEED_DATA.work) {
+            updated.work = { ...updated.work, ...SARAH_JONES_SEED_DATA.work };
           }
-          if (updates.role) {
-            if (updates.role.start_date) updated.role.start_date = updates.role.start_date;
-            Object.keys(updates.role).forEach(key => {
-              if (updates.role![key as keyof typeof updates.role]) {
-                (updated.role as any)[key] = (updates.role as any)[key];
-              }
-            });
+          // Apply role data (but NOT start_date - leave empty for new hire)
+          if (SARAH_JONES_SEED_DATA.role) {
+            // eslint-disable-next-line @typescript-eslint/no-unused-vars
+            const { start_date: _startDate, ...roleWithoutStartDate } = SARAH_JONES_SEED_DATA.role;
+            updated.role = { ...updated.role, ...roleWithoutStartDate };
           }
-          console.log('Initial form data updated:', updated);
-          return updated;
-        });
-      }
+          // Apply comp data
+          if (SARAH_JONES_SEED_DATA.comp) {
+            updated.comp = { ...updated.comp, ...SARAH_JONES_SEED_DATA.comp };
+          }
+        }
+        
+        // Then apply any parsed updates from the message (for name, email, date if provided)
+        if (updates.personal) {
+          // Only update fields that have values
+          if (updates.personal.first_name) updated.personal.first_name = updates.personal.first_name;
+          if (updates.personal.last_name) updated.personal.last_name = updates.personal.last_name;
+          if (updates.personal.invite_email) updated.personal.invite_email = updates.personal.invite_email;
+          if (updates.personal.personal_email) updated.personal.personal_email = updates.personal.personal_email;
+        }
+        if (updates.role) {
+          if (updates.role.start_date) updated.role.start_date = updates.role.start_date;
+          Object.keys(updates.role).forEach(key => {
+            if (updates.role![key as keyof typeof updates.role]) {
+              (updated.role as Record<string, unknown>)[key] = (updates.role as Record<string, unknown>)[key];
+            }
+          });
+        }
+        
+        console.log('Initial form data updated:', updated);
+        return updated;
+      });
       
       // Check if this is a copied employee flow
       // Check for @employee pattern (old) or @[firstname] [lastname] pattern (new - after strong type selection)
@@ -1675,73 +1724,52 @@ export default function ComposerView() {
               </div>
               
               {/* Action Cards */}
-              <div className="flex flex-col gap-3 mt-2">
+              <div className="flex gap-3 mt-2">
                 {/* Upload a document */}
-                <button className="flex items-start gap-3 p-4 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors text-left">
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <button className="flex-1 flex items-center gap-3 px-4 py-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors">
+                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 6H16M8 10H16M8 14H11M6 22H18C19.1046 22 20 21.1046 20 20V4C20 2.89543 19.1046 2 18 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <div className="flex flex-col gap-0.5">
-                    <p className="font-medium text-[14px] leading-[20px] text-black">
-                      Upload a document
-                    </p>
-                    <p className="font-normal text-[13px] leading-[18px] text-[#716f6c]">
-                      Hire using an offer letter or CSV for multiple hires
-                    </p>
-                  </div>
+                  <p className="font-medium text-[14px] leading-[20px] text-black">
+                    Upload a document
+                  </p>
                 </button>
 
                 {/* Reference an existing employee */}
-                <button className="flex items-start gap-3 p-4 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors text-left">
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <button 
+                  onClick={() => {
+                    const referenceText = 'Reference information from @Sarah Jones\n\n- New hire\'s name:\n- Email:\n- Start date:';
+                    setInputValue(referenceText);
+                    // Focus the textarea
+                    if (chatInputRef.current) {
+                      chatInputRef.current.focus();
+                    }
+                  }}
+                  className="flex-1 flex items-center gap-3 px-4 py-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors"
+                >
+                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <div className="flex flex-col gap-0.5">
-                    <p className="font-medium text-[14px] leading-[20px] text-black">
-                      Reference an existing employee
-                    </p>
-                    <p className="font-normal text-[13px] leading-[18px] text-[#716f6c]">
-                      Reuse an employee's information and adjust as needed
-                    </p>
-                  </div>
-                </button>
-
-                {/* Rehire */}
-                <button className="flex items-start gap-3 p-4 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors text-left">
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M21 21L23 19M23 19L21 17M23 19H18M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                  <div className="flex flex-col gap-0.5">
-                    <p className="font-medium text-[14px] leading-[20px] text-black">
-                      Rehire
-                    </p>
-                    <p className="font-normal text-[13px] leading-[18px] text-[#716f6c]">
-                      Rehire a former employee or contractor
-                    </p>
-                  </div>
+                  <p className="font-medium text-[14px] leading-[20px] text-black">
+                    Use Sarah Jones as a reference
+                  </p>
                 </button>
 
                 {/* Hire an ATS candidate */}
-                <button className="flex items-start gap-3 p-4 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors text-left">
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <button className="flex-1 flex items-center gap-3 px-4 py-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors">
+                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M21 21L23 19M23 19L21 17M23 19H18M12.5 7C12.5 9.20914 10.7091 11 8.5 11C6.29086 11 4.5 9.20914 4.5 7C4.5 4.79086 6.29086 3 8.5 3C10.7091 3 12.5 4.79086 12.5 7Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M21 21L16.65 16.65" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <div className="flex flex-col gap-0.5">
-                    <p className="font-medium text-[14px] leading-[20px] text-black">
-                      Hire an ATS candidate
-                    </p>
-                    <p className="font-normal text-[13px] leading-[18px] text-[#716f6c]">
-                      Hire directly from an ATS job requisition
-                    </p>
-                  </div>
+                  <p className="font-medium text-[14px] leading-[20px] text-black">
+                    Extend offer to candidate James Eames
+                  </p>
                 </button>
               </div>
             </div>

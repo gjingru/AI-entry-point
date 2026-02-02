@@ -208,6 +208,7 @@ export default function StartHiringView() {
   const [isInputFocused, setIsInputFocused] = useState(false);
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [isDragging, setIsDragging] = useState(false);
+  const [hoveredCard, setHoveredCard] = useState<'upload' | 'copy' | 'template' | null>(null);
   const contentEditableRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -1070,7 +1071,7 @@ export default function StartHiringView() {
       }, 100);
     } else if (option === 'copy') {
       // Pre-fill main input box with reference text and field prompts (strong type, no dropdown)
-      const prefillText = 'Reference information from @Sarah Jones\n\n- New hire\'s name:\n- Email:\n- Start date:';
+      const prefillText = 'Copy details from @Sarah Jones\n\n- New hire\'s name:\n- Email:\n- Start date:';
       const mentionKey = '@Sarah Jones';
       
       // Add to selected mentions for berry color styling
@@ -1144,7 +1145,7 @@ export default function StartHiringView() {
                 }}
               />
               <h1 className="font-medium leading-8 text-[26px] text-black text-center tracking-[0px]">
-                Hire faster with AI
+                Hire faster with Rippling AI
               </h1>
             </div>
           </div>
@@ -1340,17 +1341,21 @@ export default function StartHiringView() {
                         whiteSpace: 'pre-wrap'
                       }}
                     />
-                    {/* Rotating placeholder text - hidden when focused or has content */}
+                    {/* Fixed placeholder text - hidden when focused or has content */}
                     {!promptValue.trim() && !isInputFocused && (
                       <div 
-                        className="absolute pointer-events-none font-normal leading-5 text-[14px] text-[#716f6c] top-0 left-0 transition-opacity duration-400 ease-in-out"
+                        className="absolute pointer-events-none font-normal leading-5 text-[14px] text-[#716f6c] top-0 left-0"
                         style={{
-                          opacity: isPlaceholderVisible ? 1 : 0,
-                          transitionDuration: '400ms',
                           whiteSpace: 'pre-wrap'
                         }}
                       >
-                        {PLACEHOLDER_TEXTS[currentPlaceholderIndex]}
+                        {hoveredCard === 'upload' 
+                          ? 'Upload document' 
+                          : hoveredCard === 'copy' 
+                            ? 'Copy details from @Sarah Jones' 
+                            : hoveredCard === 'template' 
+                              ? 'Hire using @L5 Sales Rep job template' 
+                              : 'Describe you hire to start'}
                       </div>
                     )}
                     {/* Mention Dropdown */}
@@ -1484,8 +1489,8 @@ export default function StartHiringView() {
                       )}
                     </>
                   ) : (
-                    /* Outline Icon Button */
-                    <button className="flex items-center justify-center relative shrink-0 size-8 rounded-xl border border-[rgba(0,0,0,0.1)] border-solid bg-white hover:bg-gray-50 hover:border-[rgba(0,0,0,0.2)] transition-all">
+                    /* Outline Icon Button - Square with 6px border-radius */
+                    <button className="flex items-center justify-center relative shrink-0 size-6 rounded-md border border-[rgba(0,0,0,0.2)] border-solid bg-white hover:bg-gray-50 hover:border-[rgba(0,0,0,0.3)] transition-all">
                       <img 
                         alt="Add" 
                         className="block max-w-none size-4" 
@@ -1521,7 +1526,7 @@ export default function StartHiringView() {
                       }
                     }}
                     disabled={!promptValue.trim()}
-                    className="flex gap-2 items-center justify-center relative shrink-0 h-8 px-3 rounded-xl bg-[#7A005D] hover:bg-[#9F1E7A] transition-colors border border-[#7A005D] border-solid disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex gap-1 items-center justify-center relative shrink-0 h-6 px-2 rounded-md bg-[#7A005D] hover:bg-[#9F1E7A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <img 
                       alt="Send" 
@@ -1533,7 +1538,7 @@ export default function StartHiringView() {
                         target.style.display = 'none';
                       }}
                     />
-                    <span className="font-medium text-[14px] text-white whitespace-nowrap">Quick start and review</span>
+                    <span className="font-medium text-[12px] leading-4 text-white whitespace-nowrap">Start and review</span>
                   </button>
                 </div>
               </div>
@@ -1544,109 +1549,83 @@ export default function StartHiringView() {
           {!promptValue.trim() && (
           <div className={`w-full ${selectedMentions.size > 0 ? 'relative z-40' : ''}`}>
             <div className="flex gap-3 w-full">
-              {/* Option 1: Upload a document */}
+              {/* Option 1: Upload document */}
               <div 
                 onClick={() => setShowUploadModal(true)}
-                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-center p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+                onMouseEnter={() => setHoveredCard('upload')}
+                onMouseLeave={() => setHoveredCard(null)}
+                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
               >
-                <div className="flex gap-2 items-center w-full">
-                  {/* Icon Avatar with border and background */}
-                  <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
-                    <div 
-                      className="block max-w-none size-4"
-                      style={{
-                        maskImage: `url(${icons.DocumentOutline})`,
-                        maskSize: 'contain',
-                        maskRepeat: 'no-repeat',
-                        maskPosition: 'center',
-                        WebkitMaskImage: `url(${icons.DocumentOutline})`,
-                        WebkitMaskSize: 'contain',
-                        WebkitMaskRepeat: 'no-repeat',
-                        WebkitMaskPosition: 'center',
-                        backgroundColor: '#971e7A'
-                      }}
-                      role="img"
-                      aria-label="Document"
-                    />
+                <div className="flex gap-2 items-start w-full">
+                  {/* Icon Avatar with light berry background */}
+                  <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M14 2V8H20" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M12 18V12" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M9 15L12 12L15 15" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </div>
                   <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                    <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
-                      Upload a document
+                    <p className="font-medium leading-4 text-black text-[12px] text-left">
+                      Upload document
                     </p>
-                    <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
-                      Hire using an offer letter or CSV
+                    <p className="font-normal leading-4 text-black text-[12px] text-left">
+                      Let Rippling AI extract data from offer letter or CSV file
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Option 2: Reference an existing employee */}
+              {/* Option 2: Copy details from employee */}
               <div 
                 onClick={() => handleOptionClick('copy')}
-                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-center p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+                onMouseEnter={() => setHoveredCard('copy')}
+                onMouseLeave={() => setHoveredCard(null)}
+                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
               >
-                <div className="flex gap-2 items-center w-full">
-                  {/* Icon Avatar with border and background */}
-                  <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
-                    <div 
-                      className="block max-w-none size-4"
-                      style={{
-                        maskImage: `url(${icons.CopyOutline})`,
-                        maskSize: 'contain',
-                        maskRepeat: 'no-repeat',
-                        maskPosition: 'center',
-                        WebkitMaskImage: `url(${icons.CopyOutline})`,
-                        WebkitMaskSize: 'contain',
-                        WebkitMaskRepeat: 'no-repeat',
-                        WebkitMaskPosition: 'center',
-                        backgroundColor: '#971e7A'
-                      }}
-                      role="img"
-                      aria-label="Copy"
-                    />
+                <div className="flex gap-2 items-start w-full">
+                  {/* Icon Avatar with light berry background */}
+                  <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.5523C18.7122 5.2539 19.0078 6.1168 19.0078 7.005C19.0078 7.8932 18.7122 8.7561 18.1676 9.4577C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </div>
                   <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                    <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
-                      Use Sarah Jones as a reference
+                    <p className="font-medium leading-4 text-black text-[12px] text-left">
+                      Copy details from <span className="text-[#7a005d]">@Sarah Jones</span>
                     </p>
-                    <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
-                      Reuse an employee's data and adjust
+                    <p className="font-normal leading-4 text-black text-[12px] text-left">
+                      Start with existing employee details and adjust
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Option 3: Hire ATS candidate */}
+              {/* Option 3: Hire using job template */}
               <div 
-                onClick={() => handleOptionClick('ats')}
-                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-center p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+                onClick={() => handleOptionClick('template')}
+                onMouseEnter={() => setHoveredCard('template')}
+                onMouseLeave={() => setHoveredCard(null)}
+                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
               >
-                <div className="flex gap-2 items-center w-full">
-                  {/* Icon Avatar with border and background */}
-                  <div className="relative shrink-0 size-6 flex items-center justify-center rounded-full bg-[#FEF3FF]">
-                    <div 
-                      className="block max-w-none size-4"
-                      style={{
-                        maskImage: `url(${icons.SearchOutline})`,
-                        maskSize: 'contain',
-                        maskRepeat: 'no-repeat',
-                        maskPosition: 'center',
-                        WebkitMaskImage: `url(${icons.SearchOutline})`,
-                        WebkitMaskSize: 'contain',
-                        WebkitMaskRepeat: 'no-repeat',
-                        WebkitMaskPosition: 'center',
-                        backgroundColor: '#971e7A'
-                      }}
-                      role="img"
-                      aria-label="Search"
-                    />
+                <div className="flex gap-2 items-start w-full">
+                  {/* Icon Avatar with light berry background */}
+                  <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </div>
                   <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                    <p className="font-medium leading-5 text-black text-[13px] text-left truncate">
-                      Hire ATS candidate James Eames
+                    <p className="font-medium leading-4 text-black text-[12px] text-left">
+                      Hire using <span className="text-[#7a005d]">@L5 Sales Rep job template</span>
                     </p>
-                    <p className="font-normal leading-4 text-[#716f6c] text-[12px] text-left truncate">
-                      Hire directly from an ATS requisition
+                    <p className="font-normal leading-4 text-black text-[12px] text-left">
+                      Pre-fill with job template
                     </p>
                   </div>
                 </div>

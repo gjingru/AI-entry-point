@@ -1726,15 +1726,23 @@ export default function ComposerView() {
               {/* Action Cards */}
               <div className="flex gap-3 mt-2">
                 {/* Upload a document */}
-                <button className="flex-1 flex items-center gap-3 px-4 py-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors">
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M8 6H16M8 10H16M8 14H11M6 22H18C19.1046 22 20 21.1046 20 20V4C20 2.89543 19.1046 2 18 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <button className="flex-1 flex items-start gap-2 p-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-lg hover:bg-[#fafafa] transition-colors">
+                  <div className="w-7 h-7 rounded-full bg-[#FDF3FF] flex items-center justify-center flex-shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M14 2V8H20" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M12 18V12" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M9 15L12 12L15 15" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <p className="font-medium text-[14px] leading-[20px] text-black">
-                    Upload a document
-                  </p>
+                  <div className="flex flex-col gap-0.5 text-left min-w-0">
+                    <p className="font-medium text-[12px] leading-[16px] text-black">
+                      Upload document
+                    </p>
+                    <p className="font-normal text-[12px] leading-[16px] text-black">
+                      Let Rippling AI extract data from offer letter or CSV file
+                    </p>
+                  </div>
                 </button>
 
                 {/* Reference an existing employee */}
@@ -1747,29 +1755,42 @@ export default function ComposerView() {
                       chatInputRef.current.focus();
                     }
                   }}
-                  className="flex-1 flex items-center gap-3 px-4 py-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors"
+                  className="flex-1 flex items-start gap-2 p-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-lg hover:bg-[#fafafa] transition-colors"
                 >
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <div className="w-7 h-7 rounded-full bg-[#FDF3FF] flex items-center justify-center flex-shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.5523C18.7122 5.2539 19.0078 6.1168 19.0078 7.005C19.0078 7.8932 18.7122 8.7561 18.1676 9.4577C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <p className="font-medium text-[14px] leading-[20px] text-black">
-                    Use Sarah Jones as a reference
-                  </p>
+                  <div className="flex flex-col gap-0.5 text-left min-w-0">
+                    <p className="font-medium text-[12px] leading-[16px] text-black">
+                      Copy details from <span className="text-[#7A005D]">@Sarah Jones</span>
+                    </p>
+                    <p className="font-normal text-[12px] leading-[16px] text-black">
+                      Start with existing employee details and adjust
+                    </p>
+                  </div>
                 </button>
 
-                {/* Hire an ATS candidate */}
-                <button className="flex-1 flex items-center gap-3 px-4 py-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-xl hover:bg-[#fafafa] transition-colors">
-                  <div className="w-6 h-6 flex items-center justify-center flex-shrink-0">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M21 21L16.65 16.65" stroke="#7A005D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                {/* Hire using job template */}
+                <button className="flex-1 flex items-start gap-2 p-3 bg-white border border-[rgba(0,0,0,0.1)] rounded-lg hover:bg-[#fafafa] transition-colors">
+                  <div className="w-7 h-7 rounded-full bg-[#FDF3FF] flex items-center justify-center flex-shrink-0">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </div>
-                  <p className="font-medium text-[14px] leading-[20px] text-black">
-                    Extend offer to candidate James Eames
-                  </p>
+                  <div className="flex flex-col gap-0.5 text-left min-w-0">
+                    <p className="font-medium text-[12px] leading-[16px] text-black">
+                      Hire using <span className="text-[#7A005D]">@L5 Sales Rep job template</span>
+                    </p>
+                    <p className="font-normal text-[12px] leading-[16px] text-black">
+                      Pre-fill with job template
+                    </p>
+                  </div>
                 </button>
               </div>
             </div>

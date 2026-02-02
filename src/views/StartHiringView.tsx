@@ -1526,7 +1526,7 @@ export default function StartHiringView() {
                       }
                     }}
                     disabled={!promptValue.trim()}
-                    className="flex gap-1 items-center justify-center relative shrink-0 h-6 px-2 rounded-md bg-[#7A005D] hover:bg-[#9F1E7A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex gap-1.5 items-center justify-center relative shrink-0 h-8 px-3 rounded-lg bg-[#7A005D] hover:bg-[#9F1E7A] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <img 
                       alt="Send" 
@@ -1538,7 +1538,7 @@ export default function StartHiringView() {
                         target.style.display = 'none';
                       }}
                     />
-                    <span className="font-medium text-[12px] leading-4 text-white whitespace-nowrap">Start and review</span>
+                    <span className="font-medium text-[13px] leading-4 text-white whitespace-nowrap">Start and review</span>
                   </button>
                 </div>
               </div>

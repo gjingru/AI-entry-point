@@ -1767,7 +1767,7 @@ export default function ComposerView() {
                   </div>
                   <div className="flex flex-col gap-0.5 text-left min-w-0">
                     <p className="font-medium text-[12px] leading-[16px] text-black">
-                      Copy details from <span className="text-[#7A005D]">@Sarah Jones</span>
+                      Copy details from an existing employee
                     </p>
                     <p className="font-normal text-[12px] leading-[16px] text-black">
                       Start with existing employee details and adjust
@@ -1785,7 +1785,7 @@ export default function ComposerView() {
                   </div>
                   <div className="flex flex-col gap-0.5 text-left min-w-0">
                     <p className="font-medium text-[12px] leading-[16px] text-black">
-                      Hire using <span className="text-[#7A005D]">@L5 Sales Rep job template</span>
+                      Use job template
                     </p>
                     <p className="font-normal text-[12px] leading-[16px] text-black">
                       Pre-fill with job template

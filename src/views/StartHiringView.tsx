@@ -1070,32 +1070,69 @@ export default function StartHiringView() {
         }
       }, 100);
     } else if (option === 'copy') {
-      // Pre-fill main input box with reference text and field prompts (strong type, no dropdown)
-      const prefillText = 'Copy details from @Sarah Jones\n\n- New hire\'s name:\n- Email:\n- Start date:';
-      const mentionKey = '@Sarah Jones';
-      
-      // Add to selected mentions for berry color styling
-      const updatedMentions = new Set([...selectedMentions, mentionKey]);
-      setSelectedMentions(updatedMentions);
+      // Pre-fill main input box with "Copy details from @employee" and show dropdown
+      const prefillText = 'Copy details from @employee';
       setPromptValue(prefillText);
+      setIsProgrammaticOpen(true);
       
-      // Update the contentEditable without triggering the dropdown
+      // Open the dropdown after a short delay to ensure contentEditable is updated
       setTimeout(() => {
         if (contentEditableRef.current) {
           // Focus the contentEditable first
           contentEditableRef.current.focus();
           
-          // Set the content with the mention formatted in berry color
-          contentEditableRef.current.innerHTML = formatTextWithMentions(prefillText, updatedMentions);
+          // Set the content
+          contentEditableRef.current.innerHTML = formatTextWithMentions(prefillText, selectedMentions);
           
-          // Move cursor to the end
+          // Move cursor to the end of "@employee"
           const selection = window.getSelection();
           if (selection && contentEditableRef.current) {
-            const range = document.createRange();
-            range.selectNodeContents(contentEditableRef.current);
-            range.collapse(false);
-            selection.removeAllRanges();
-            selection.addRange(range);
+            const cursorPos = prefillText.length;
+            
+            // Use TreeWalker to find the correct text node and position
+            const walker = document.createTreeWalker(
+              contentEditableRef.current,
+              NodeFilter.SHOW_TEXT,
+              null
+            );
+            
+            let currentPos = 0;
+            let targetNode: Node | null = null;
+            let targetOffset = 0;
+            
+            let node;
+            while (node = walker.nextNode()) {
+              const nodeLength = node.textContent?.length || 0;
+              if (currentPos + nodeLength >= cursorPos) {
+                targetNode = node;
+                targetOffset = cursorPos - currentPos;
+                break;
+              }
+              currentPos += nodeLength;
+            }
+            
+            if (targetNode) {
+              const range = document.createRange();
+              range.setStart(targetNode, targetOffset);
+              range.collapse(true);
+              selection.removeAllRanges();
+              selection.addRange(range);
+            } else {
+              // Fallback: move to end
+              const range = document.createRange();
+              range.selectNodeContents(contentEditableRef.current);
+              range.collapse(false);
+              selection.removeAllRanges();
+              selection.addRange(range);
+            }
+            
+            // Trigger the mention detection to show dropdown
+            detectMention(prefillText, cursorPos);
+            
+            // Reset the flag after a short delay
+            setTimeout(() => {
+              setIsProgrammaticOpen(false);
+            }, 300);
           }
         }
       }, 100);
@@ -1352,9 +1389,9 @@ export default function StartHiringView() {
                         {hoveredCard === 'upload' 
                           ? 'Upload document' 
                           : hoveredCard === 'copy' 
-                            ? 'Copy details from @Sarah Jones' 
+                            ? 'Copy details from an existing employee' 
                             : hoveredCard === 'template' 
-                              ? 'Hire using @L5 Sales Rep job template' 
+                              ? 'Use job template' 
                               : 'Describe you hire to start'}
                       </div>
                     )}
@@ -1596,7 +1633,7 @@ export default function StartHiringView() {
                   </div>
                   <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                     <p className="font-medium leading-4 text-black text-[12px] text-left">
-                      Copy details from <span className="text-[#7a005d]">@Sarah Jones</span>
+                      Copy details from an existing employee
                     </p>
                     <p className="font-normal leading-4 text-black text-[12px] text-left">
                       Start with existing employee details and adjust
@@ -1622,7 +1659,7 @@ export default function StartHiringView() {
                   </div>
                   <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                     <p className="font-medium leading-4 text-black text-[12px] text-left">
-                      Hire using <span className="text-[#7a005d]">@L5 Sales Rep job template</span>
+                      Use job template
                     </p>
                     <p className="font-normal leading-4 text-black text-[12px] text-left">
                       Pre-fill with job template

@@ -833,6 +833,24 @@ export default function StartHiringView() {
     };
   }, []);
 
+  // Check which design option is selected (A or B)
+  const [designOption, setDesignOption] = useState<'A' | 'B'>(() => {
+    const stored = localStorage.getItem('devOptions.designOption');
+    return (stored === 'A' || stored === 'B') ? stored : 'A';
+  });
+
+  // Listen for changes to the design option setting
+  useEffect(() => {
+    const handleDesignChange = (event: CustomEvent) => {
+      setDesignOption(event.detail.option);
+    };
+
+    window.addEventListener('designOptionChanged', handleDesignChange as EventListener);
+    return () => {
+      window.removeEventListener('designOptionChanged', handleDesignChange as EventListener);
+    };
+  }, []);
+
   // Rotate placeholder text when input is not focused and empty
   useEffect(() => {
     // Only rotate if enabled, input is not focused, and has no content
@@ -1582,92 +1600,146 @@ export default function StartHiringView() {
             </div>
           </div>
 
-          {/* Option Cards - 3 in a row - Hidden when prompt has content */}
+          {/* Option Cards/Buttons - Hidden when prompt has content */}
           {!promptValue.trim() && (
           <div className={`w-full ${selectedMentions.size > 0 ? 'relative z-40' : ''}`}>
-            <div className="flex gap-3 w-full">
-              {/* Option 1: Upload document */}
-              <div 
-                onClick={() => setShowUploadModal(true)}
-                onMouseEnter={() => setHoveredCard('upload')}
-                onMouseLeave={() => setHoveredCard(null)}
-                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
-              >
-                <div className="flex gap-2 items-start w-full">
-                  {/* Icon Avatar with light berry background */}
-                  <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M14 2V8H20" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M12 18V12" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M9 15L12 12L15 15" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                  <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                    <p className="font-medium leading-4 text-black text-[12px] text-left">
-                      Upload document
-                    </p>
-                    <p className="font-normal leading-4 text-black text-[12px] text-left">
-                      Let Rippling AI extract data from offer letter or CSV file
-                    </p>
+            {designOption === 'A' ? (
+              /* Option A: Card-style design with icons and descriptions */
+              <div className="flex gap-3 w-full">
+                {/* Option 1: Upload document */}
+                <div 
+                  onClick={() => setShowUploadModal(true)}
+                  onMouseEnter={() => setHoveredCard('upload')}
+                  onMouseLeave={() => setHoveredCard(null)}
+                  className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+                >
+                  <div className="flex gap-2 items-start w-full">
+                    {/* Icon Avatar with light berry background */}
+                    <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M14 2V8H20" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M12 18V12" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M9 15L12 12L15 15" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
+                    <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                      <p className="font-medium leading-4 text-black text-[12px] text-left">
+                        Upload document
+                      </p>
+                      <p className="font-normal leading-4 text-black text-[12px] text-left">
+                        Let Rippling AI extract data from offer letter or CSV file
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Option 2: Copy details from employee */}
-              <div 
-                onClick={() => handleOptionClick('copy')}
-                onMouseEnter={() => setHoveredCard('copy')}
-                onMouseLeave={() => setHoveredCard(null)}
-                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
-              >
-                <div className="flex gap-2 items-start w-full">
-                  {/* Icon Avatar with light berry background */}
-                  <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.5523C18.7122 5.2539 19.0078 6.1168 19.0078 7.005C19.0078 7.8932 18.7122 8.7561 18.1676 9.4577C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                  <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                    <p className="font-medium leading-4 text-black text-[12px] text-left">
-                      Copy details from an existing employee
-                    </p>
-                    <p className="font-normal leading-4 text-black text-[12px] text-left">
-                      Start with existing employee details and adjust
-                    </p>
+                {/* Option 2: Copy details from employee */}
+                <div 
+                  onClick={() => handleOptionClick('copy')}
+                  onMouseEnter={() => setHoveredCard('copy')}
+                  onMouseLeave={() => setHoveredCard(null)}
+                  className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+                >
+                  <div className="flex gap-2 items-start w-full">
+                    {/* Icon Avatar with light berry background */}
+                    <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.5523C18.7122 5.2539 19.0078 6.1168 19.0078 7.005C19.0078 7.8932 18.7122 8.7561 18.1676 9.4577C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
+                    <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                      <p className="font-medium leading-4 text-black text-[12px] text-left">
+                        Copy details from an existing employee
+                      </p>
+                      <p className="font-normal leading-4 text-black text-[12px] text-left">
+                        Start with existing employee details and adjust
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Option 3: Hire using job template */}
-              <div 
-                onClick={() => handleOptionClick('template')}
-                onMouseEnter={() => setHoveredCard('template')}
-                onMouseLeave={() => setHoveredCard(null)}
-                className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
-              >
-                <div className="flex gap-2 items-start w-full">
-                  {/* Icon Avatar with light berry background */}
-                  <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                      <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </div>
-                  <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                    <p className="font-medium leading-4 text-black text-[12px] text-left">
-                      Use job template
-                    </p>
-                    <p className="font-normal leading-4 text-black text-[12px] text-left">
-                      Pre-fill with job template
-                    </p>
+                {/* Option 3: Hire using job template */}
+                <div 
+                  onClick={() => handleOptionClick('template')}
+                  onMouseEnter={() => setHoveredCard('template')}
+                  onMouseLeave={() => setHoveredCard(null)}
+                  className="bg-white border border-[rgba(0,0,0,0.1)] border-solid flex flex-1 items-start p-3 rounded-lg cursor-pointer hover:border-[rgba(0,0,0,0.2)] transition-all"
+                >
+                  <div className="flex gap-2 items-start w-full">
+                    {/* Icon Avatar with light berry background */}
+                    <div className="relative shrink-0 w-7 h-7 flex items-center justify-center rounded-full bg-[#FDF3FF] overflow-hidden">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="#CE71BB" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                      </svg>
+                    </div>
+                    <div className="flex flex-col gap-0.5 flex-1 min-w-0">
+                      <p className="font-medium leading-4 text-black text-[12px] text-left">
+                        Use job template
+                      </p>
+                      <p className="font-normal leading-4 text-black text-[12px] text-left">
+                        Pre-fill with job template
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            ) : (
+              /* Option B: Button-style design - simple outline buttons in a row */
+              <div className="flex gap-3 items-center flex-wrap">
+                {/* Upload document button */}
+                <button 
+                  onClick={() => setShowUploadModal(true)}
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-[rgba(0,0,0,0.2)] rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M17 8L12 3L7 8" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M12 3V15" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span className="text-[14px] font-medium text-black">Upload document</span>
+                </button>
+
+                {/* Copy existing employee button */}
+                <button 
+                  onClick={() => handleOptionClick('copy')}
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-[rgba(0,0,0,0.2)] rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="9" y="9" width="13" height="13" rx="2" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M5 15H4C3.46957 15 2.96086 14.7893 2.58579 14.4142C2.21071 14.0391 2 13.5304 2 13V4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H13C13.5304 2 14.0391 2.21071 14.4142 2.58579C14.7893 2.96086 15 3.46957 15 4V5" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span className="text-[14px] font-medium text-black">Copy existing employee</span>
+                </button>
+
+                {/* Use job template button */}
+                <button 
+                  onClick={() => handleOptionClick('template')}
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-[rgba(0,0,0,0.2)] rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 7H4C2.89543 7 2 7.89543 2 9V19C2 20.1046 2.89543 21 4 21H20C21.1046 21 22 20.1046 22 19V9C22 7.89543 21.1046 7 20 7Z" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M16 21V5C16 4.46957 15.7893 3.96086 15.4142 3.58579C15.0391 3.21071 14.5304 3 14 3H10C9.46957 3 8.96086 3.21071 8.58579 3.58579C8.21071 3.96086 8 4.46957 8 5V21" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span className="text-[14px] font-medium text-black">Use job template</span>
+                </button>
+
+                {/* Discover more button */}
+                <button 
+                  className="flex items-center gap-2 px-4 py-2 bg-white border border-[rgba(0,0,0,0.2)] rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="8" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M21 21L16.65 16.65" stroke="black" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span className="text-[14px] font-medium text-black">Discover more</span>
+                </button>
+              </div>
+            )}
           </div>
           )}
 
@@ -1676,7 +1748,7 @@ export default function StartHiringView() {
             onClick={() => handleOptionClick('manual')}
             className="font-medium leading-5 text-[#1e4aa9] text-[14px] text-center w-full cursor-pointer hover:underline transition-colors pt-[1.5em]"
           >
-            Enter hire details manually instead
+            {designOption === 'B' ? 'Enter all hire details manually instead' : 'Enter hire details manually instead'}
           </p>
         </div>
       </div>

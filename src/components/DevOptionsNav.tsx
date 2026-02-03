@@ -6,12 +6,18 @@ const imgChevronRight = icons.ChevronRight;
 // Divider removed - using CSS border instead
 
 const ROTATING_PLACEHOLDER_KEY = 'devOptions.rotatingPlaceholder';
+const DESIGN_OPTION_KEY = 'devOptions.designOption';
 
 export default function DevOptionsNav() {
   const [isRotatingPlaceholder, setIsRotatingPlaceholder] = useState(() => {
     // Default to true if not set
     const stored = localStorage.getItem(ROTATING_PLACEHOLDER_KEY);
     return stored !== null ? stored === 'true' : true;
+  });
+
+  const [designOption, setDesignOption] = useState<'A' | 'B'>(() => {
+    const stored = localStorage.getItem(DESIGN_OPTION_KEY);
+    return (stored === 'A' || stored === 'B') ? stored : 'A';
   });
 
   useEffect(() => {
@@ -22,12 +28,52 @@ export default function DevOptionsNav() {
     }));
   }, [isRotatingPlaceholder]);
 
+  useEffect(() => {
+    localStorage.setItem(DESIGN_OPTION_KEY, designOption);
+    // Dispatch event so StartHiringView can react to changes
+    window.dispatchEvent(new CustomEvent('designOptionChanged', { 
+      detail: { option: designOption } 
+    }));
+  }, [designOption]);
+
   return (
     <nav className="sticky top-0 z-[60] bg-[#b9dbf3] flex items-center gap-[11px] px-[11px] h-[30px]">
       <p className="font-medium leading-[16px] text-[12px] text-[#1e4aa9] text-center tracking-[0px] shrink-0">
         Dev options
       </p>
       
+      {/* Design Option A/B toggle */}
+      <div className="flex items-center gap-1 px-2">
+        <p className="font-medium leading-[16px] text-[12px] text-[#202022] text-center tracking-[0px] shrink-0 mr-1">
+          Design:
+        </p>
+        <button
+          onClick={() => setDesignOption('A')}
+          className={`px-2 py-0.5 text-[12px] font-medium rounded transition-colors ${
+            designOption === 'A' 
+              ? 'bg-[#1e4aa9] text-white' 
+              : 'bg-white text-[#202022] hover:bg-gray-100'
+          }`}
+        >
+          Option A
+        </button>
+        <button
+          onClick={() => setDesignOption('B')}
+          className={`px-2 py-0.5 text-[12px] font-medium rounded transition-colors ${
+            designOption === 'B' 
+              ? 'bg-[#1e4aa9] text-white' 
+              : 'bg-white text-[#202022] hover:bg-gray-100'
+          }`}
+        >
+          Option B
+        </button>
+      </div>
+
+      {/* Divider */}
+      <div className="flex h-[18px] items-center justify-center relative shrink-0 w-px">
+        <div className="h-full w-px bg-gray-400" />
+      </div>
+
       {/* Rotating placeholder text toggle */}
       <div className="flex items-center gap-2 px-2">
         <label className="flex items-center gap-1.5 cursor-pointer">

@@ -954,8 +954,8 @@ export default function StartHiringView() {
     if (option === 'manual') {
       navigate('/hiring');
     } else if (option === 'template') {
-      // Pre-fill main input box with "Hire using @job template"
-      const prefillText = 'Hire using @job template';
+      // Pre-fill main input box with a prompt-like message
+      const prefillText = 'I want to hire someone using @job template';
       setPromptValue(prefillText);
       setIsProgrammaticOpen(true);
       
@@ -1088,8 +1088,8 @@ export default function StartHiringView() {
         }
       }, 100);
     } else if (option === 'copy') {
-      // Pre-fill main input box with "Copy details from @employee" and show dropdown
-      const prefillText = 'Copy details from @employee';
+      // Pre-fill main input box with a prompt-like message
+      const prefillText = 'I want to hire someone like @employee';
       setPromptValue(prefillText);
       setIsProgrammaticOpen(true);
       
@@ -1185,7 +1185,7 @@ export default function StartHiringView() {
 
       {/* Main Content */}
       <div className="flex flex-col items-center pt-16 pb-8 px-4">
-        <div className="w-full max-w-[780px]">
+        <div className="w-full max-w-[860px]">
           {/* Title Section */}
           <div className="flex flex-col items-center gap-6 mb-6">
             <div className="flex items-center gap-2.5 justify-center">
@@ -1405,12 +1405,12 @@ export default function StartHiringView() {
                         }}
                       >
                         {hoveredCard === 'upload' 
-                          ? 'Upload document' 
+                          ? 'I want to upload a document...' 
                           : hoveredCard === 'copy' 
-                            ? 'Copy details from an existing employee' 
+                            ? 'I want to hire someone like...' 
                             : hoveredCard === 'template' 
-                              ? 'Use job template' 
-                              : 'Describe you hire to start'}
+                              ? 'I want to hire someone using...' 
+                              : 'Describe your hire to start'}
                       </div>
                     )}
                     {/* Mention Dropdown */}
@@ -1624,13 +1624,13 @@ export default function StartHiringView() {
                       </svg>
                     </div>
                     <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                      <p className="font-medium leading-4 text-black text-[12px] text-left">
-                        Upload document
-                      </p>
-                      <p className="font-normal leading-4 text-black text-[12px] text-left">
-                        Let Rippling AI extract data from offer letter or CSV file
-                      </p>
-                    </div>
+                                      <p className="font-semibold leading-4 text-black text-[12px] text-left">
+                                        Upload document
+                                      </p>
+                                      <p className="font-normal leading-4 text-black text-[12px] text-left">
+                                        Let Rippling AI extract data from an offer letter or CSV file
+                                      </p>
+                                    </div>
                   </div>
                 </div>
 
@@ -1652,13 +1652,13 @@ export default function StartHiringView() {
                       </svg>
                     </div>
                     <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                      <p className="font-medium leading-4 text-black text-[12px] text-left">
-                        Copy details from an existing employee
-                      </p>
-                      <p className="font-normal leading-4 text-black text-[12px] text-left">
-                        Start with existing employee details and adjust
-                      </p>
-                    </div>
+                                      <p className="font-semibold leading-4 text-black text-[12px] text-left">
+                                        Copy details from an existing employee
+                                      </p>
+                                      <p className="font-normal leading-4 text-black text-[12px] text-left">
+                                        Start with an existing employee's details and adjust
+                                      </p>
+                                    </div>
                   </div>
                 </div>
 
@@ -1678,13 +1678,13 @@ export default function StartHiringView() {
                       </svg>
                     </div>
                     <div className="flex flex-col gap-0.5 flex-1 min-w-0">
-                      <p className="font-medium leading-4 text-black text-[12px] text-left">
-                        Use job template
-                      </p>
-                      <p className="font-normal leading-4 text-black text-[12px] text-left">
-                        Pre-fill with job template
-                      </p>
-                    </div>
+                                      <p className="font-semibold leading-4 text-black text-[12px] text-left">
+                                        Use job template
+                                      </p>
+                                      <p className="font-normal leading-4 text-black text-[12px] text-left">
+                                        Pre-fill details from a saved job template
+                                      </p>
+                                    </div>
                   </div>
                 </div>
               </div>
@@ -1743,10 +1743,15 @@ export default function StartHiringView() {
           </div>
           )}
 
+          {/* Review reassurance text */}
+          <p className="text-[13px] text-[#716f6c] text-center w-full pt-4">
+            You'll be able to review and edit all details before finalizing
+          </p>
+
           {/* Manual Entry Link - Always visible */}
           <p 
             onClick={() => handleOptionClick('manual')}
-            className="font-medium leading-5 text-[#1e4aa9] text-[14px] text-center w-full cursor-pointer hover:underline transition-colors pt-[1.5em]"
+            className="font-medium leading-5 text-[#1e4aa9] text-[14px] text-center w-full cursor-pointer hover:underline transition-colors pt-3"
           >
             {designOption === 'B' ? 'Enter all hire details manually instead' : 'Enter hire details manually instead'}
           </p>

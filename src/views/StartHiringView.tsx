@@ -1653,7 +1653,7 @@ export default function StartHiringView() {
                     </div>
                     <div className="flex flex-col gap-0.5 flex-1 min-w-0">
                                       <p className="font-semibold leading-4 text-black text-[12px] text-left">
-                                        Copy details from an existing employee
+                                        Reference an existing employee
                                       </p>
                                       <p className="font-normal leading-4 text-black text-[12px] text-left">
                                         Start with an existing employee's details and adjust
@@ -1743,10 +1743,6 @@ export default function StartHiringView() {
           </div>
           )}
 
-          {/* Review reassurance text */}
-          <p className="text-[13px] text-[#716f6c] text-center w-full pt-4">
-            You'll be able to review and edit all details before finalizing
-          </p>
 
           {/* Manual Entry Link - Always visible */}
           <p 
